@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  
+  <title>ÍNDICE EXAMEN - MARÇAL ALARCÓN</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Esta es la web de mi examen del tema 1">
+  <meta name="author" content="Marçal Alarcón Brugal">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <base href="index.html">
+
+<link rel="stylesheet" type="text/css" href="estilos.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@500&display=swap" rel="stylesheet">
+
+<base href="index.html">
+</head>
+ 
+<body>
+    <header>
+      <img class="logoweb" src="MaterialExamenes/16433178_303.jpg">
+       <h1>Título</h1>
+       <p>Subtítulo</p>
+       
+    </header>
+
+    <nav>
+        <a class="active" href="index.html">Inicio</a>
+        <a class="nav" href="pag2.html">Etiquetas</a>
+    </nav>
+
+    <article>
+
+       <section>
+           <div class="secciones">
+            <h2>Contenido</h2>
+
+               <div class="img1">
+                 <img class="imagen" src="MaterialExamenes/campo-1-e1558303226877.jpg">
+                 <a href="index.html">Enlace1</a>
+               </div>
+               <div class="img1">
+                 <img class="imagen" src="MaterialExamenes/campo-1-e1558303226877.jpg">
+                 <a href="index.html">Enlace2</a>
+               </div>
+           </div>
+
+        </section>
+
+        <section>
+          <div class="secciones">
+            <h2>Tabla</h2>
+
+        <table>
+        <thead> 
+          <tr>
+            <th colspan="7">TABLA DE PRUEBA</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td rowspan="2">Celda 1.1</td>
+            <td>Celda 1.2</td>
+            <td>Celda 1.3</td>
+            <td colspan="2">Celda 1.4</td>
+            <td>Celda 1.5</td>
+            <td rowspan="2">Celda 1.6</td>
+          </tr>
+
+          <tr>
+            <td>Celda 2.2</td>
+            <td rowspan="2">Celda 2.3</td>
+            <td>Celda 2.4</td>
+            <td>Celda 2.5</td>
+            <td>Celda 2.5</td>
+          </tr>
+
+          <tr>
+            <td>Celda 3.1</td>
+            <td>Celda 3.2</td>
+            <td>Celda 3.3</td>
+            <td>Celda 3.4</td>
+            <td colspan="2">Celda 3.5</td>
+          </tr>
+        </tbody>
+
+        </table>
+           </div>
+
+        </section>
+
+        <section>
+           <div class="secciones">
+            <h2>Lista de definición</h2>
+
+              <dt>Definición</dt>
+                  <dd>Esto es una definición</dd>
+              <dt>Definición</dt>
+                  <dd>Esto es una definición</dd>
+              <dt>Definición</dt>
+                  <dd>Esto es una definición</dd>
+
+           </div>
+
+        </section>
+
+        <section>
+           <div class="secciones">
+            <h2>Formulario</h2>
+            <form action="enviar.php" autocomplete="true" method="get">
+
+          <fieldset>
+            <legend>Nombre y apellidos</legend>
+              <label for="nombre">Nombre: </label><input type="text" id="nombre" name="nombre" value="" placeholder="Escribe su nombre" autofocus="true" autocomplete="false">
+
+              <label for="apellidos">Apellidos: </label><input type="text" id="apellidos" name="apellidos" value="" placeholder="Escribe sus apellidos">
+          </fieldset>
+
+          <label for="numeros">Números: </label><input type="number" id="numero" name="numero" value="" placeholder="Escribe un número" disabled="true"><br>
+          <label for="contrasena">Contaseña: </label><input type="password" id="contrasena" name="contrasena" value="" placeholder="Escribe su contraseña">
+          <label for="email">Email: </label><input type="email" id="email" name="email" value="" placeholder="Escribe su correo"><br>
+          <label for="fechayhora">Fecha de hoy:</label><input type="date" id="fechayhora" name="fechayhora" value="" placeholder="Escribe la fecha de hoy"><br>
+          <label for="archivo">Documento:</label><input type="file" id="documento" name="documento" value=""><br>
+
+          <input type="submit" name="submit" value="Enviar formulario">
+
+          <input type="reset" name="reset" value="Reiniciar formulario">
+        </form>
+
+           </div>
+
+        </section>
+
+    </article>
+
+    <aside>
+      <div class="divaside">
+       <h3>Índice de la página</h3>
+       <p>Imagenes</p>
+       <p>Tabla</p>
+       <p>Lista de definición</p>
+       <p>Formulario</p>
+      </div>
+    </aside>
+    <footer>
+        Web creada por Marçal Alarcón Brugal
+    </footer>
+
+    <div style="width: 0px; height: 0px; background-color: red; position: fixed; bottom: 20px; right: 20px;"></div>
+</body>
+</html>

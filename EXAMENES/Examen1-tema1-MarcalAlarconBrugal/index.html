@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ÍNDICE EXAMEN MARÇAL</title>
+
+	<link rel="stylesheet" href="css.css">
+
+	<meta charset="utf-8">
+  	<meta name="description" content="Examen HTML5 y CSS3 Marçal.">
+  	<meta name="keywords" content="HTML, HTML5, MAB55, EXAMEN, CSS, CSS3">
+  	<meta name="author" content="Marçal Alarcón Brugal">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  	<base href="index.html">
+
+</head>
+<body>
+
+	<header>
+
+
+		<nav class="menuprincipal">
+			<a class="elmenuactual" href="index.html">INICIO</a>
+			<a class="elmenu" href="etiquetas.html">ETIQUETAS</a>
+
+		</nav>
+
+	</header>
+
+	<div class="seccionprincipal">
+		<div class="contenido">
+		
+		<article>
+			
+			<section>
+				<h1>Tabla</h1>
+				<table>
+				<thead>	
+					<tr>
+						<th colspan="3">Titulos</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td rowspan="2">Celda 1.1</td>
+						<td>Celda 1.2</td>
+						<td>Celda 1.3</td>
+					</tr>
+
+					<tr>
+						<td>Celda 2.2</td>
+						<td>Celda 2.3</td>
+					</tr>
+
+					<tr>
+						<td colspan="2">Celda 3.1</td>
+						<td>Celda 3.2</td>
+					</tr>
+				</tbody>
+
+				</table>
+
+			</section>
+
+
+			<section>
+				<h1>Lista de definición</h1>
+
+					<dt>Definición</dt>
+						<dd>Esto es un ejemplo de definición</dd>
+
+					<dt>Definición</dt>
+						<dd>Esto es un ejemplo de definición</dd>
+
+					<dt>Definición</dt>
+						<dd>Esto es un ejemplo de definición</dd>
+
+			</section>
+
+			<section>
+				<h1>Formulario</h1>
+				<form action="enviar.php" autocomplete="false" method="get">
+
+					<fieldset>
+						<legend>Nombre y apellidos</legend>
+							<label for="Nombre">Nombre:</label><input type="text" id="Nombre" name="Nombre" value="" placeholder="Escribe tu nombre" autofocus="true" autocomplete="false">
+
+							<label for="Apellidos">Apellidos:</label><input type="text" id="Apellidos" name="Apellidos" value="" placeholder="Escribe tus apellidos" disabled="true">
+					</fieldset>
+
+					<label for="Comentario">Comentario:</label><br><textarea id="Comentario" rows="10" cols="30"></textarea><br>
+
+					<label for="Contrasena">Contaseña:</label><input type="password" id="Contrasena" name="Contrasena" value="" placeholder="Escribe la contraseña">
+
+					<label for="Email">Email:</label><input type="email" id="Email" name="Email" value="" placeholder="Escribe tu correo"><br>
+
+					<label for="Fecha">Fecha de hoy:</label><input type="date" id="Fecha" name="Fecha" value="" placeholder="Escribe la fecha de hoy">
+
+					<label for="Color">Fecha de hoy:</label><input type="color" id="Color" name="Color" value="" placeholder="Escribe la fecha de hoy"><br>
+
+					<input type="submit" name="submit" value="Enviar formulario">
+
+					<input type="reset" name="reset" value="Reiniciar formulario">
+				</form>
+
+			</section>
+
+
+		</article>
+
+		</div>
+	</div>
+
+	<aside>
+
+			<H2>Contenido de la web</H2>
+
+			<p>Tablas</p>
+			<p>listas</p>
+			<p>formularios</p>
+
+	</aside>
+
+	<footer>Web hecha por MAB55</footer>
+
+</body>
+</html>

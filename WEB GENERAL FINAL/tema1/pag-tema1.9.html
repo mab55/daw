@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/principal.css">
+    <link rel="stylesheet" href="../css/tema.css">
+    <link rel="stylesheet" href="../css/ejemplos.css">
+
+    <link rel="icon" type="image/png" href="../img/icono.jpg">
+    <title>Z-INDEX - TEMA 1 APARTADO 9</title>
+</head>
+<body>
+    <header class="cabezera">
+        <iframe src="../menu.html" style="width: 100%; height: 120px; border: 0px;" target="_parent"></iframe>
+    </header>
+    <div class="divcabecera">
+    	
+
+    	<div class="cajatitulo">
+				<h1 class="titulotema">Planificación de interfaces web</h1>
+				<h2 class="tituloseccion">1.9 PROPIEDAD Z-INDEX</h2>
+		</div>
+
+    </div>
+
+    <div class="general">
+        <div class="divprincipal">
+        	<div class="contenidocentral">
+
+                <article>
+				<section id="1">
+					<h1>¿Qué es la propiedad Z-Index?</h1>
+					<p>La propiedad Z-Index, es la que establece el orden de los elementos en un sitio web (denomina que elementos van delante y cuáles detrás).<br> Siempre por defecto el Z-index es <span>auto</span> (el navegador calcula por defecto el orden de apliamiento).</p>
+
+				</section>
+
+
+				<section id="2">
+					<h1>Orden de apilamiento</h1>
+					<p>El orden que toma el navegador para ordenar los elementos es:</p>
+					<ol>
+						<li>Elementos posicionados con Z-Index positivo (con valor más de 1).</ul>
+						<li>Elementos posicionados sin Z-Index (con valor auto).</ul>
+						<li>Elementos no posicionados (sin ningún tipo de position).</ul>
+						<li>Elementos con Z-Index negativo (con valor menor de -1).</ul>
+					</ol>
+
+				</section>
+
+
+				<section id="3">
+					<h1>Normas con Z-Index</h1>
+					<p>A la hora de usar Z-Index, debemos de:</p>
+					<ul>
+						<li>Usar rangos de números (no usar números consecutivos de Z-Index).</li>
+						<li>Nunca el padre podrá estar por delante del hijo (solo podremos solucionarlo estableciendo al padre un Z-Index por defecto y al hijo un Z-Index negativo).</li>
+					</ul>	
+
+				</section>
+
+
+				<section id="4">
+					<h1>EJEMPLOS DE Z-INDEX</h1>
+
+                    <div class="divejemplo">
+                        <div class="ejemplonavegador">
+                            <div class="circulos c1"></div>
+                            <div class="circulos c2"></div>
+                            <div class="circulos c3"></div>
+                            
+                            <div class="contenidos">
+                                <!-- Aquí dentro va el ejemplo (divs) -->
+                                <div class="colorrojo redondo" style="width: 100%; height: 100px; position: absolute; top: 20px; z-index: 20;"></div>
+                                <div class="colorverde redondo" style="width: 100%; height: 100px; position: relative; top: 0px; z-index:10"></div>
+                                <!-- Termina el ejemplo -->
+                            </div>
+                        </div>
+
+                        <div class="ejemplocodigo">
+                           <div class="contenidos ccodigo">
+                               <div class="codigo">
+                                    <!-- Aquí dentro va el ejemplo (código) -->
+                                   
+                                    <p>div.rojo {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; position: absolute;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; top: 20px;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; z-index: 20;<br>
+                                    }<br>
+                                    </p>
+
+                                    <p>div.verde {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; position: relative;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; top: 0px;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; z-index: 10;<br>
+                                    }<br>
+                                    </p>
+
+                                    <!-- Termina el ejemplo -->
+                                </div>
+                           </div> 
+                        </div>
+                    </div>
+
+                    <p>Podemos ver que el div de color rojo, se coloca por encima del div verde, puesto que el z-index del div rojo es superior al del div verde.</p>
+					
+
+				</section>
+
+			</article>
+
+        	</div>
+        </div>
+        <aside class="lateral">
+            
+            <div class="lateral">
+
+            	<div class="contenidolateral">
+            		
+            		<h2>Contenido</h2>
+            		
+            		<ol>
+            			<a href="#1"><li>¿Qué es la propiedad Z-Index?</li></a>
+            			<a href="#2"><li>Orden de apilamiento</li></a>
+            			<a href="#3"><li>Normas con Z-Index</li></a>
+            			<a href="#4"><li>Ejemplos de Z-Index</li></a>
+            		</ol>
+
+            	</div>
+            	
+            </div>
+
+        </aside>
+    </div>
+    <footer>
+        <p>Web realizada por Marçal Alarcón Brugal - © 2021</p>
+    </footer>
+</body>
+</html>

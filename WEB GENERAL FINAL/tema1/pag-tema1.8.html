@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/principal.css">
+    <link rel="stylesheet" href="../css/tema.css">
+    <link rel="stylesheet" href="../css/ejemplos.css">
+
+    <link rel="icon" type="image/png" href="../img/icono.jpg">
+    <title>POSITION - TEMA 1 APARTADO 8</title>
+</head>
+<body>
+    <header class="cabezera">
+        <iframe src="../menu.html" style="width: 100%; height: 120px; border: 0px;" target="_parent"></iframe>
+    </header>
+    <div class="divcabecera">
+        
+
+        <div class="cajatitulo">
+                <h1 class="titulotema">Planificación de interfaces web</h1>
+                <h2 class="tituloseccion">1.8 POSITION</h2>
+        </div>
+
+    </div>
+
+    <div class="general">
+        <div class="divprincipal">
+            <div class="contenidocentral">
+
+                <article>
+                <section id="1">
+                    <h1>CONCEPTOS DE POSITION</h1>
+                    <p>Antes de empezar a maquetar con la propiedad position, debemos de conocer los siguientes términos:</p>
+                    <h2>Espacio reservado</h2>
+                    <p>Es el espacio que ocupa un elemento en el navegador.</p>
+                    <h2>Flujo de rendimiento</h2>
+                    <p>Es el orden en el que se dibujan los elementos (de izquierda a derecha y de arriba a abajo). Hay que tener en cuenta que por defecto el punto 0,0 es la esquina superior izquierda.</p>
+                    <h2>Elemento posicionado</h2>
+                    <p>El valor tiene la prioridad position con un valor distinto a static (valor por defecto).</p>
+                    <h2>Sticking context</h2>
+                    <p>Es el orden en el que se apilan las cajas.</p>
+
+                </section>
+
+
+                <section id="2">
+                    <h1>PROPIEDADES FUNDAMENTALES DE POSITION</h1>
+                    <p>Al posicionar un elemento se activan 5 propiedades que usaremos para mover los elementos en los tres ejes (x,y,z):</p>
+                    <h2>top</h2>
+                    <p>El elemento se moverá desde la parte superior a la posición que le hayamos indicado. Es importante saber que esta propiedad tiene preferencia sobre el Bottom.</p>
+                    <h2>bottom</h2>
+                    <p>El elemento se moverá desde la parte inferior a la posición que le hayamos indicado.</p>
+                    <h2>left</h2>
+                    <p>El elemento se moverá desde la parte izquierda (posición por defecto) a la posición que le hayamos indicado. Es importante saber que esta propiedad tiene preferencia sobre el Right.</p>
+                    <h2>right</h2>
+                    <p>El elemento se moverá desde la parte derecha, a la posición que le hayamos indicado.</p>
+                    <h2>Z-index</h2>
+                    <p>El elemento se moverá en el contexto de apilamiento, es decir moviendo el eje z.</p>
+                </section>
+
+
+                <section id="3">
+                    <h1>Tipos de position</h1>
+                    <p>A la propiedad position, le podemos establecer los siguientes tipos de propiedades:</p>
+
+                    <h2>Static</h2>
+                    <p>Con <code>position: static</code> :</p>
+                    <ul>
+                       <li>El elemento no se posiciona y no podemos moverlo.</li> 
+                       <li>Es el valor por defecto de todos los elementos.</li> 
+                    </ul>
+                    <h3>Ejemplo con position: static</h3>
+                    <p>Creamos un div de color rojo y le aplicamos la propiedad <code>position: static</code> con posición superior de 20px.</p>
+                    <div class="divejemplo">
+                        
+                        <div class="ejemplonavegador">
+                            <div class="circulos c1"></div>
+                            <div class="circulos c2"></div>
+                            <div class="circulos c3"></div>
+                            
+                            <div class="contenidos">
+                                <!-- Aquí dentro va el ejemplo (divs) -->
+                                <div class="colorrojo redondo" style="width: 100%; height: 100px;"></div>
+
+                                <!-- Termina el ejemplo -->
+                            </div>
+                        </div>
+
+                        <div class="ejemplocodigo">
+                           <div class="contenidos ccodigo">
+                               <div class="codigo">
+                                    <!-- Aquí dentro va el ejemplo (código) -->
+                                   
+                                    <p>div.rojo {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; position: fixed;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; top: 20px;<br>
+                                    }<br>
+                                    </p>
+
+                                    <!-- Termina el ejemplo -->
+                                </div>
+                           </div> 
+                        </div>
+                    </div>
+
+                    <p>Podemos ver que por mucho que intentemos mover la posición, el div no se mueve.</p>
+
+
+                    <h2>Relative</h2>
+                    <p>Con <code>position: relative</code> :</p>
+                    <ul>
+                       <li>El elemento mantiene su posición y espacio reservado.</li> 
+                       <li>Mantiene las medidas en el flujo de rendimiento.</li> 
+                    </ul>
+                    <p><span>IMPORTANTE:</span> Usa la esquina superior izquierda de se posición, como punto de referéncia.</p>
+
+                    <h3>Ejemplo con position: relative</h3>
+                    <p>Creamos un div de color rojo y le aplicamos la propiedad <code>position: relative</code> con posición superior de 20px.</p>
+
+                    <div class="divejemplo">
+                        <div class="ejemplonavegador">
+                            <div class="circulos c1"></div>
+                            <div class="circulos c2"></div>
+                            <div class="circulos c3"></div>
+                            
+                            <div class="contenidos">
+                                <!-- Aquí dentro va el ejemplo (divs) -->
+                                <div class="colorrojo redondo" style="width: 100%; height: 100px; position: relative; top: 20px;"></div>
+
+                                <!-- Termina el ejemplo -->
+                            </div>
+                        </div>
+
+                        <div class="ejemplocodigo">
+                           <div class="contenidos ccodigo">
+                               <div class="codigo">
+                                    <!-- Aquí dentro va el ejemplo (código) -->
+                                   
+                                    <p>div.rojo {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; position: relative;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; top: 20px;<br>
+                                    }<br>
+                                    </p>
+
+                                    <!-- Termina el ejemplo -->
+                                </div>
+                           </div> 
+                        </div>
+                    </div>
+
+                    <p>Podemos ver que el div de color rojo, se ha movido 20 pixeles de la parte superior.</p>
+
+
+                    <h3>Ejemplo con position: relative y elementos superpuestos</h3>
+                    <p>Creamos un div de color rojo y le aplicamos la propiedad <code>position: relative</code> con posición superior de 40px y creamos un segundo div de color azul con la propiedad <code>position: relative</code>.</p>
+
+                    <div class="divejemplo">
+                        <div class="ejemplonavegador">
+                            <div class="circulos c1"></div>
+                            <div class="circulos c2"></div>
+                            <div class="circulos c3"></div>
+                            
+                            <div class="contenidos">
+                                <!-- Aquí dentro va el ejemplo (divs) -->
+                                <div class="colorrojo redondo" style="width: 100%; height: 100px; position: relative; top: 40px;"></div>
+                                <div class="colorazul redondo" style="width: 100%; height: 100px; position: relative;"></div>
+
+                                <!-- Termina el ejemplo -->
+                            </div>
+                        </div>
+
+                        <div class="ejemplocodigo">
+                           <div class="contenidos ccodigo">
+                               <div class="codigo">
+                                    <!-- Aquí dentro va el ejemplo (código) -->
+                                   
+                                    <p>div.rojo {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; position: relative;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; top: 40px;<br>
+                                    }<br>
+                                    &nbsp;<br>
+                                    <p>div.azul {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; position: static;<br>
+                                    }<br>
+                                    </p>
+
+                                    <!-- Termina el ejemplo -->
+                                </div>
+                           </div> 
+                        </div>
+                    </div>
+
+                    <p>Podemos ver que el div de color azul, se superpone por encima del div de color rojo.</p>
+
+
+                    <h3>Ejemplo con position: relative y propiedades contradictorias</h3>
+                    <p>Creamos un div de color rojo y le aplicamos la propiedad <code>position: relative</code> con posición superior de 20px y posición inferior de 40px.</p>
+
+                    <div class="divejemplo">
+                        <div class="ejemplonavegador">
+                            <div class="circulos c1"></div>
+                            <div class="circulos c2"></div>
+                            <div class="circulos c3"></div>
+                            
+                            <div class="contenidos">
+                                <!-- Aquí dentro va el ejemplo (divs) -->
+                                <div class="colorrojo redondo" style="width: 100%; height: 100px; position: relative; top: 20px; bottom: 40px;"></div>
+                                
+                                <!-- Termina el ejemplo -->
+                            </div>
+                        </div>
+
+                        <div class="ejemplocodigo">
+                           <div class="contenidos ccodigo">
+                               <div class="codigo">
+                                    <!-- Aquí dentro va el ejemplo (código) -->
+                                   
+                                    <p>div.rojo {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; position: relative;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; top: 20px;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; bottom: 40px;<br>
+                                    }<br>
+                                    </p>
+
+                                    <!-- Termina el ejemplo -->
+                                </div>
+                           </div> 
+                        </div>
+                    </div>
+
+                    <p>Podemos ver que el div de color rojo solo se ha movido 20 píxeles de la parte superior, puesto que la propiedad top prevalece sobre bottom.</p>
+
+
+
+                    <h2>Absolute</h2>
+                    <p>Con <code>position: absolute</code> :</p>
+                    <ul>
+                       <li>El elemento pierde su posición y espacio reservado.</li> 
+                       <li>El elemento se posiciona flotando en el elemento padre.</li> 
+                    </ul>
+                    <p><span>IMPORTANTE:</span> Si no tiene elemento padre, usará el documento HTML.</p>
+                    <p><span>IMPORTANTE:</span> A los elementos de línea que tengan la propiedad absolute les podrás dar medidas (sin necesidad de usar display block).</p>
+
+                    <h3>Ejemplo con position: absolute</h3>
+                    <p>Creamos un div de color rojo y le aplicamos la propiedad <code>position: absolute</code> y luego creamos otro div de color azul.</p>
+
+                    <div class="divejemplo">
+                        <div class="ejemplonavegador">
+                            <div class="circulos c1"></div>
+                            <div class="circulos c2"></div>
+                            <div class="circulos c3"></div>
+                            
+                            <div class="contenidos">
+                                <!-- Aquí dentro va el ejemplo (divs) -->
+                                <div class="colorrojo redondo" style="width: 100%; height: 100px; position: absolute;"></div>
+                                <div class="colorazul redondo" style="width: 100%; height: 150px;"></div>
+                                
+                                <!-- Termina el ejemplo -->
+                            </div>
+                        </div>
+
+                        <div class="ejemplocodigo">
+                           <div class="contenidos ccodigo">
+                               <div class="codigo">
+                                    <!-- Aquí dentro va el ejemplo (código) -->
+                                   
+                                    <p>div.rojo {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; position: absolute;<br>
+                                    }<br>
+                                    </p>
+
+                                    <!-- Termina el ejemplo -->
+                                </div>
+                           </div> 
+                        </div>
+                    </div>
+
+                    <p>Podemos ver que el div de color rojo flota por encima del div de color azul.</p>
+
+
+                    <h3>Ejemplo con position: absolute</h3>
+                    <p>Creamos un div de color rojo y le aplicamos la propiedad <code>position: absolute</code> y luego creamos otro div de color azul.</p>
+
+                    <div class="divejemplo">
+                        <div class="ejemplonavegador">
+                            <div class="circulos c1"></div>
+                            <div class="circulos c2"></div>
+                            <div class="circulos c3"></div>
+                            
+                            <div class="contenidos">
+                                <!-- Aquí dentro va el ejemplo (divs) -->
+                                <div class="colorrojo redondo" style="width: 100%; height: 100px; position: absolute;"></div>
+                                <div class="colorazul redondo" style="width: 100%; height: 150px;"></div>
+                                
+                                <!-- Termina el ejemplo -->
+                            </div>
+                        </div>
+
+                        <div class="ejemplocodigo">
+                           <div class="contenidos ccodigo">
+                               <div class="codigo">
+                                    <!-- Aquí dentro va el ejemplo (código) -->
+                                   
+                                    <p>div.rojo {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; position: absolute;<br>
+                                    }<br>
+                                    </p>
+
+                                    <!-- Termina el ejemplo -->
+                                </div>
+                           </div> 
+                        </div>
+                    </div>
+
+                    <p>Podemos ver que el div de color rojo flota por encima del div de color azul.</p>
+
+
+                    <h3>Ejemplo con position: absolute sin contenedor</h3>
+                    <p>Creamos un div de color rojo y le aplicamos la propiedad <code>position: absolute</code> con bottom 0px y luego creamos otro div de color azul y le aplicamos la propiedad <code>position: absolute</code> con top 0px.</p>
+
+                    <div class="divejemplo">
+                        <div class="ejemplonavegador">
+                            <div class="circulos c1"></div>
+                            <div class="circulos c2"></div>
+                            <div class="circulos c3"></div>
+                            
+                            <div class="contenidos">
+                                <!-- Aquí dentro va el ejemplo (divs) -->
+                                <div class="colorrojo redondo" style="width: 100%; height: 100px; position: absolute; bottom: 0px;"></div>
+                                <div class="colorazul redondo" style="width: 100%; height: 100px; position: absolute; top: 0px;"></div>
+                                
+                                <!-- Termina el ejemplo -->
+                            </div>
+                        </div>
+
+                        <div class="ejemplocodigo">
+                           <div class="contenidos ccodigo">
+                               <div class="codigo">
+                                    <!-- Aquí dentro va el ejemplo (código) -->
+                                   
+                                    <p>div.rojo {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; position: absolute;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; bottom: 0px;<br>
+                                    }<br>
+                                    &nbsp;<br>
+                                    div.azul {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; position: absolute;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; top: 0px;<br>
+                                    }<br>
+                                    </p>
+
+                                    <!-- Termina el ejemplo -->
+                                </div>
+                           </div> 
+                        </div>
+                    </div>
+
+                    <p>Podemos ver que el div de color rojo flota en la parte de abajo de la web y el div de color azul flota en la parte superior.</p>
+
+
+
+                <h3>Ejemplo con position: absolute con contenedor</h3>
+                    <p>Siguiendo el ejemplo anterior, al div de color azul lo meteremos dentro de otro div de color verde.</p>
+
+                    <div class="divejemplo">
+                        <div class="ejemplonavegador">
+                            <div class="circulos c1"></div>
+                            <div class="circulos c2"></div>
+                            <div class="circulos c3"></div>
+                            
+                            <div class="contenidos">
+                                <!-- Aquí dentro va el ejemplo (divs) -->
+                                <div class="colorrojo redondo" style="width: 50%; height: 100px; position: absolute; bottom: 0px;"></div>
+                                <div class="colorverde redondo" style="width: 100%; height: 130px; position: relative;">
+                                <div class="colorazul redondo" style="width: 50%; height: 100px; position: absolute; bottom: 0px;"></div>
+                                </div>
+                                
+                                <!-- Termina el ejemplo -->
+                            </div>
+                        </div>
+
+                        <div class="ejemplocodigo">
+                           <div class="contenidos ccodigo">
+                               <div class="codigo">
+                                    <!-- Aquí dentro va el ejemplo (código) -->
+                                   
+                                    <p>div.rojo {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; position: absolute;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; bottom: 0px;<br>
+                                    }<br>
+                                    &nbsp;<br>
+                                    div.verde {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; position: relative;<br>
+                                    }<br>
+                                    &nbsp;<br>
+                                    div.azul {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; position: absolute;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; bottom: 0px;<br>
+                                    }<br>
+                                    </p>
+
+                                    <!-- Termina el ejemplo -->
+                                </div>
+                           </div> 
+                        </div>
+                    </div>
+
+                    <p>Podemos ver que el div de color rojo flota en la parte de abajo de la web y el div de color azul flota en la parte inferior de su elemento padre (en este caso es el div verde).</p>
+
+
+
+                    <h2>Fixed</h2>
+                    <p>Con <code>position: fixed</code> :</p>
+                    <ul>
+                       <li>El elemento pierde su posición y espacio reservado.</li>  
+                    </ul>
+                    <p><span>IMPORTANTE:</span> El elemento siempre usará el HTML cómo referencia.</p>
+                    <p><span>IMPORTANTE:</span> El elemento siempre quedará en la misma posición (por mucho que se haga scroll).</p>
+
+                    <h3>Ejemplo con position: absolute</h3>
+                    <p>Creamos un div de color rojo y le aplicamos la propiedad <code>position: fixed</code> y lo ubicamos en la parte inferior derecha de la web.</p>
+
+                    <div class="divejemplo">
+                        <div class="ejemplonavegador">
+                            <div class="circulos c1"></div>
+                            <div class="circulos c2"></div>
+                            <div class="circulos c3"></div>
+                            
+                            <div class="contenidos">
+                                <!-- Aquí dentro va el ejemplo (divs) -->
+                                <div class="colorrojo redondo" style="width: 50%; height: 100px; position: absolute; bottom: 0px; right: 0px;"></div>
+                                
+                                <!-- Termina el ejemplo -->
+                            </div>
+                        </div>
+
+                        <div class="ejemplocodigo">
+                           <div class="contenidos ccodigo">
+                               <div class="codigo">
+                                    <!-- Aquí dentro va el ejemplo (código) -->
+                                   
+                                    <p>div.rojo {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; position: fixed;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; bottom: 0px;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; right: 0px;<br>
+                                    }<br>
+                                    </p>
+
+                                    <!-- Termina el ejemplo -->
+                                </div>
+                           </div> 
+                        </div>
+                    </div>
+
+                    <p>Podemos ver que el div de color rojo se queda fijo en la parte inferior derecha de la web.</p>
+                </section>
+
+
+                <h2>Sticky</h2>
+                    <p>Con <code>position: sticky</code> :</p>
+                    <ul>
+                       <li>Es una mezcla entre position relative y fixed.</li> 
+                       <li>Los valores top, left, bottom y right sirven para indicar cuando pasará el elemento a un comportamiento fixed.</li> 
+                    </ul>
+
+                    <h3>Ejemplo con position: sticky</h3>
+                    <p>Creamos un div de color rojo y le aplicamos la propiedad <code>position: sticky</code> y le ponemos top 0px.</p>
+
+                    <div class="divejemplo">
+                        <div class="ejemplonavegador">
+                            <div class="circulos c1"></div>
+                            <div class="circulos c2"></div>
+                            <div class="circulos c3"></div>
+                            
+                            <div class="contenidos">
+                                <!-- Aquí dentro va el ejemplo (divs) -->
+                                <div class="colorrojo redondo" style="width: 50%; height: 100px; position: absolute; top: 0px;"></div>
+                                
+                                <!-- Termina el ejemplo -->
+                            </div>
+                        </div>
+
+                        <div class="ejemplocodigo">
+                           <div class="contenidos ccodigo">
+                               <div class="codigo">
+                                    <!-- Aquí dentro va el ejemplo (código) -->
+                                   
+                                    <p>div.rojo {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; position: sticky;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; top: 0px;<br>
+                                    }<br>
+                                    </p>
+
+                                    <!-- Termina el ejemplo -->
+                                </div>
+                           </div> 
+                        </div>
+                    </div>
+
+                    <p>Podemos ver que el div de color rojo se queda fijo en la parte superior.</p>
+                </section>
+
+            </article>
+
+            </div>
+        </div>
+        <aside class="lateral">
+            
+            <div class="lateral">
+
+                <div class="contenidolateral">
+                    
+                    <h2>Contenido</h2>
+                    
+                    <ol>
+                        <a href="#1"><li>Conceptos de position</li></a>
+                        <a href="#2"><li>Propiedades fundamentales de position</li></a>
+                        <a href="#3"><li>Tipos de position</li></a>
+                    </ol>
+
+                </div>
+                
+            </div>
+
+        </aside>
+    </div>
+    <footer>
+        <p>Web realizada por Marçal Alarcón Brugal - © 2021</p>
+    </footer>
+</body>
+</html>

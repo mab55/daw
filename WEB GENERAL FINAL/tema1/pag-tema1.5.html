@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/principal.css">
+    <link rel="stylesheet" href="../css/tema.css">
+    <link rel="stylesheet" href="../css/ejemplos.css">
+
+    <link rel="icon" type="image/png" href="../img/icono.jpg">
+    <title>NUEVAS ETIQUETAS HTML - TEMA 1 APARTADO 5</title>
+</head>
+<body>
+    <header class="cabezera">
+        <iframe src="../menu.html" style="width: 100%; height: 120px; border: 0px;" target="_parent"></iframe>
+    </header>
+    <div class="divcabecera">
+    	
+
+    	<div class="cajatitulo">
+				<h1 class="titulotema">Planificación de interfaces web</h1>
+				<h2 class="tituloseccion">1.5 NUEVAS ETIQUETAS HTML</h2>
+		</div>
+
+    </div>
+
+    <div class="general">
+        <div class="divprincipal">
+        	<div class="contenidocentral">
+
+                <article>
+				<section id="1">
+					<h1>Etiqueta &lt;a&gt;</h1>
+					<p>La etiqueta <code>&lt;a&gt;</code> crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier otra URL. Por ejemplo:</p>
+
+
+					<div class="divejemplo">
+                        
+                        <div class="ejemplonavegador">
+                            <div class="circulos c1"></div>
+                            <div class="circulos c2"></div>
+                            <div class="circulos c3"></div>
+                            
+                            <div class="contenidos">
+                                <!-- Aquí dentro va el ejemplo (divs) -->
+                                <a href="www.mab55.com" style="text-decoration: underline;">Enlace a la web de Mab55</a>
+
+                                <!-- Termina el ejemplo -->
+                            </div>
+                        </div>
+
+                        <div class="ejemplocodigo">
+                           <div class="contenidos ccodigo">
+                               <div class="codigo">
+                                    <!-- Aquí dentro va el ejemplo (código) -->
+                                   
+                                    <p>&lt;a href="www.mab55.com"&gt;Enlace a la web de Mab55&lt;/a&gt;</p>
+
+                                    <!-- Termina el ejemplo -->
+                                </div>
+                           </div> 
+                        </div>
+                    </div>
+
+                    <h2>Atributos de la etiqueta &lt;a&gt;</h2><br>
+
+                    <h3>href</h3>
+                    <p>Especificamos el enlace o ruta donde queramos ir. Es importante saber que a parte de una url, también podemos colocar cualquier protocolo soportado por el navegador como:</p>
+
+                    <ul>
+                    	
+                    	<li><strong>file:</strong> Sirve para enlazar a un archivo.</li>
+                    	<li><strong>mailto:</strong> Sirve para enlazar a un mail.</li>
+                    </ul>
+
+
+                    <h3>target</h3>
+                    <p>Definimos la forma en la cual se va a abrir el enlace. En este atributo podemos asignarle los siguientes comportamientos:</p>
+
+                    <ul>
+                    	
+                    	<li><strong>_self:</strong> Carga la URL en el mismo contexto de navegación que el actual. Este es el comportamiento por defecto.</li>
+                    	<li><strong>_blank:</strong> Carga la URL en un nuevo contexto de navegación. Usualmente es una pestaña, sin embargo, los usuarios pueden configurar los navegadores para utilizar una ventana nueva en lugar de la pestaña.</li>
+                    	<li><strong>_parent:</strong> Carga la URL en el contexto de navegación padre (parent) del actual. Si no existe el padre, este se comporta del mismo modo que _self.</li>
+                    	<li><strong>_top:</strong> Carga la URL en el contexto más alto de navegación (el cual es un ancestro del actual, y no tiene padre (parent)). Si no hay padre (parent), este se comporta del mismo modo que _self.</li>
+                    </ul>
+
+
+                    <div class="divejemplo">
+                        
+                        <div class="ejemplonavegador">
+                            <div class="circulos c1"></div>
+                            <div class="circulos c2"></div>
+                            <div class="circulos c3"></div>
+                            
+                            <div class="contenidos">
+                                <!-- Aquí dentro va el ejemplo (divs) -->
+                                <a href="www.mab55.com" target="_self" style="text-decoration: underline;">Enlace con target _self</a><br>
+                                <a href="www.mab55.com" target="_nblank" style="text-decoration: underline;">Enlace con target _nblank</a><br>
+                                <a href="www.mab55.com" target="_parent" style="text-decoration: underline;">Enlace con target _parent</a><br>
+                                <a href="www.mab55.com" target="_top" style="text-decoration: underline;">Enlace con target _top</a><br>
+                                <!-- Termina el ejemplo -->
+                            </div>
+                        </div>
+
+                        <div class="ejemplocodigo">
+                           <div class="contenidos ccodigo">
+                               <div class="codigo">
+                                    <!-- Aquí dentro va el ejemplo (código) -->
+                                   
+                                    <p>&lt;a href="www.mab55.com" target="_self"&gt;Enlace con target _self&lt;/a&gt;</p>
+                                    <p>&lt;a href="www.mab55.com" target="_nblank"&gt;Enlace con target _nblank&lt;/a&gt;</p>
+                                    <p>&lt;a href="www.mab55.com" target="_parent"&gt;Enlace con target _parent&lt;/a&gt;</p>
+                                    <p>&lt;a href="www.mab55.com" target="_top"&gt;Enlace con target _top&lt;/a&gt;</p>
+
+                                    <!-- Termina el ejemplo -->
+                                </div>
+                           </div> 
+                        </div>
+                    </div>
+
+
+				</section>
+
+
+				<section id="2">
+					<h1>Etiqueta &lt;meter&gt;</h1>
+                    <p>La etiqueta <code>&lt;meter&gt;</code> define una medida escalar dentro de un rango conocido o un valor fraccionario.</p>
+					<div class="divejemplo">
+                        
+                        <div class="ejemplonavegador">
+                            <div class="circulos c1"></div>
+                            <div class="circulos c2"></div>
+                            <div class="circulos c3"></div>
+                            
+                            <div class="contenidos">
+                                <!-- Aquí dentro va el ejemplo (divs) -->
+                                <meter max=1.0 min=0.0 value=0.5></meter>
+
+                                <!-- Termina el ejemplo -->
+                            </div>
+                        </div>
+
+                        <div class="ejemplocodigo">
+                           <div class="contenidos ccodigo">
+                               <div class="codigo">
+                                    <!-- Aquí dentro va el ejemplo (código) -->
+                                   
+                                    <p>&lt;meter max=1.0 min=0.0 value=0.5&gt;&lt;/meter&gt;</p>
+
+                                    <!-- Termina el ejemplo -->
+                                </div>
+                           </div> 
+                        </div>
+                    </div>
+
+                    <h2>Atributos de la etiqueta &lt;meter&gt;</h2><br>
+
+                    <h3>value</h3>
+                    <p>Un número de punto flotante que representa el valor actual del rango medido. Esto debe estar entre el valor min y el max (si se especifica).</p>
+
+                    <h3>min</h3>
+                    <p>Indica el límite inferior del rango medido. Esto debe ser menor que el valor max (si se especifica). Si no se especifica, el valor mínimo es 0.</p>
+
+                    <h3>max</h3>
+                    <p>Indica el límite superior del rango medido. Este debe ser mayor que el valor min (si se especifica). Si no se especifica, el valor máximo es 1.0.</p>
+
+				</section>
+						
+
+				</section>
+
+
+				<section id="3">
+					<h1>Etiqueta &lt;img&gt;</h1>
+
+                     <p>La etiqueta <code>&lt;img&gt;</code> nos permite mostrar una imagen por pantalla.</p>
+                    <div class="divejemplo">
+                        
+                        <div class="ejemplonavegador">
+                            <div class="circulos c1"></div>
+                            <div class="circulos c2"></div>
+                            <div class="circulos c3"></div>
+                            
+                            <div class="contenidos">
+                                <!-- Aquí dentro va el ejemplo (divs) -->
+                                <img src="https://img.hipertextual.com/content/images/system/home_cover_1487382543596_2cf9e3.jpg" alt="Puente" width="250">
+
+                                <!-- Termina el ejemplo -->
+                            </div>
+                        </div>
+
+                        <div class="ejemplocodigo">
+                           <div class="contenidos ccodigo">
+                               <div class="codigo">
+                                    <!-- Aquí dentro va el ejemplo (código) -->
+                                   
+                                    <p>&lt;img src="puente.jpg" alt="Puente" width="250"&gt;</p>
+
+                                    <!-- Termina el ejemplo -->
+                                </div>
+                           </div> 
+                        </div>
+                    </div>
+
+                    <h2>Atributos de la etiqueta &lt;img&gt;</h2><br>
+
+                    <h3>alt</h3>
+                    <p>Define un texto alternativo para la imagen</p>
+
+                    <h3>width y height</h3>
+                    <p>Establecemos la anchura (width) y altura (height) de la imagen.</p>
+
+                    <h3>src</h3>
+                    <p>Propiedad más importante. Aquí es donde se establece el enlace de la imagen.</p>
+						
+
+				</section>
+				
+
+				<section id="4">
+					<h1>Etiqueta &lt;video&gt;</h1>
+                    <p>El nuevo elemento video HTML5 es compatible con la reproducción nativa de archivos de vídeo en el navegador sin necesidad de plug-ins ni reproductores.</p>
+
+
+                    <p>La etiqueta <code>&lt;video&gt;</code> se usa para la reproducción nativa de archivos de vídeo en el navegador sin necesidad de plug-ins ni reproductores externos.</p>
+                    <div class="divejemplo">
+                        
+                        <div class="ejemplonavegador">
+                            <div class="circulos c1"></div>
+                            <div class="circulos c2"></div>
+                            <div class="circulos c3"></div>
+                            
+                            <div class="contenidos">
+                                <!-- Aquí dentro va el ejemplo (divs) -->
+                                <video id='video' controls="controls" preload='none' width="300" poster="../img/tema1/sec5/miniatura.jpg">
+                                    <source id='mp4' src="../img/tema1/sec5/videoplayback.mp4" type='video/mp4'/>
+                                </video>
+
+                                <!-- Termina el ejemplo -->
+                            </div>
+                        </div>
+
+                        <div class="ejemplocodigo">
+                           <div class="contenidos ccodigo">
+                               <div class="codigo">
+                                    <!-- Aquí dentro va el ejemplo (código) -->
+                                   
+                                    <p>&lt;video id='video' controls="controls" preload='none' width="300" poster="../img/tema1/sec5/miniatura.jpg"&gt;
+                                    &lt;source id='mp4' src="../img/tema1/sec5/videoplayback.mp4" type='video/mp4'/&gt;
+                                    &lt;/video&gt;</p>
+
+                                    <!-- Termina el ejemplo -->
+                                </div>
+                           </div> 
+                        </div>
+                    </div>
+
+                    <h2>Atributos de la etiqueta &lt;meter&gt;</h2><br>
+
+                    <h3>controls</h3>
+                    <p>Especifica si se muestran o no los controles en el vídeo (es recomendable mantener activada esta opción).</p>
+
+                    <h3>width</h3>
+                    <p>Indica el ancho que tendrá el vídeo.</p>
+
+                    <h3>loop</h3>
+                    <p>Indica si el vídeo debe reproducirse una y otra vez.</p>
+
+                    <h3>preload</h3>
+                    <p>Indicamos si queremos que el vídeo se active automaticamente.</p>
+
+                    <h3>poster</h3>
+                    <p>Imagen que se mostrará antes de cargar el vídeo.</p>
+						
+
+				</section>
+
+				<section id="5">
+					<h1>Etiqueta &lt;audio&gt;</h1>
+                    <p>La etiqueta <code>&lt;audio&gt;</code> se usa para la reproducción de archivos de audio en el navegador sin necesidad de plug-ins ni reproductores externos.</p>
+                    <div class="divejemplo">
+                        
+                        <div class="ejemplonavegador">
+                            <div class="circulos c1"></div>
+                            <div class="circulos c2"></div>
+                            <div class="circulos c3"></div>
+                            
+                            <div class="contenidos">
+                                <!-- Aquí dentro va el ejemplo (divs) -->
+                                <audio controls="controls">
+                                    <source src="http://www.noiseaddicts.com/samples_1w72b820/2514.mp3" type="audio/mpeg" />
+                                </audio>
+
+                                <!-- Termina el ejemplo -->
+                            </div>
+                        </div>
+
+                        <div class="ejemplocodigo">
+                           <div class="contenidos ccodigo">
+                               <div class="codigo">
+                                    <!-- Aquí dentro va el ejemplo (código) -->
+                                   
+                                    <p>&lt;audio controls="controls"&gt;
+                                    &lt;source src="http://www.noiseaddicts.com/2514.mp3" type="audio/mpeg" /&gt;
+                                &lt;/audio&gt;</p>
+
+                                    <!-- Termina el ejemplo -->
+                                </div>
+                           </div> 
+                        </div>
+                    </div>
+
+                    <h2>Atributos de la etiqueta &lt;audio&gt;</h2><br>
+
+                    <h3>controls</h3>
+                    <p>Especifica si se muestran o no los controles en el vídeo (es recomendable mantener activada esta opción).</p>
+
+                    <h3>loop</h3>
+                    <p>Indica si el vídeo debe reproducirse una y otra vez.</p>
+
+                    <h3>preload</h3>
+                    <p>Indicamos si queremos que el vídeo se active automaticamente.</p>
+
+                    <h3>poster</h3>
+                    <p>Imagen que se mostrará antes de cargar el vídeo.</p>
+						
+
+				</section>
+
+
+				<section id="6">
+					<h1>Etiqueta &lt;menu&gt;</h1>
+
+                    <p>La etiqueta <code>&lt;menu&gt;</code> nos permite crear un menu para nuestra web.</p>
+                    <div class="divejemplo">
+                        
+                        <div class="ejemplonavegador">
+                            <div class="circulos c1"></div>
+                            <div class="circulos c2"></div>
+                            <div class="circulos c3"></div>
+                            
+                            <div class="contenidos">
+                                <!-- Aquí dentro va el ejemplo (divs) -->
+                                <menu>
+                                <li><button onclick="copy()">Copy</button></li>
+                                <li><button onclick="cut()">Cut</button></li>
+                                <li><button onclick="paste()">Paste</button></li>
+                                </menu>
+
+                                <!-- Termina el ejemplo -->
+                            </div>
+                        </div>
+
+                        <div class="ejemplocodigo">
+                           <div class="contenidos ccodigo">
+                               <div class="codigo">
+                                    <!-- Aquí dentro va el ejemplo (código) -->
+                                   
+                                    <p>&lt;menu&gt;<br>
+  &lt;li&gt;&lt;button onclick="copy()">Copy&lt;/button&gt;&lt;/li&gt;<br>
+  &lt;li&gt;&lt;button onclick="cut()">Cut&lt;/button&gt;&lt;/li&gt;<br>
+  &lt;li&gt;&lt;button onclick="paste()">Paste&lt;/button&gt;&lt;/li&gt;<br>
+&lt;/menu&gt;</p>
+
+                                    <!-- Termina el ejemplo -->
+                                </div>
+                           </div> 
+                        </div>
+                    </div>
+						
+
+				</section>
+
+                <section id="7">
+                    <h1>Etiqueta &lt;time&gt;</h1>
+                    <p>La etiqueta <code>&lt;time&gt;</code> se usa para mostrar una hora en nuestro sitio web.</p>
+                    <div class="divejemplo">
+                        
+                        <div class="ejemplonavegador">
+                            <div class="circulos c1"></div>
+                            <div class="circulos c2"></div>
+                            <div class="circulos c3"></div>
+                            
+                            <div class="contenidos">
+                                <!-- Aquí dentro va el ejemplo (divs) -->
+                                <time datetime="20:00">20:00</time>
+
+                                <!-- Termina el ejemplo -->
+                            </div>
+                        </div>
+
+                        <div class="ejemplocodigo">
+                           <div class="contenidos ccodigo">
+                               <div class="codigo">
+                                    <!-- Aquí dentro va el ejemplo (código) -->
+                                   
+                                    <p>&lt;time datetime="20:00"&gt;20:00&lt;/time&gt;</p>
+
+                                    <!-- Termina el ejemplo -->
+                                </div>
+                           </div> 
+                        </div>
+                    </div>
+
+                    <h2>Atributos de la etiqueta &lt;time&gt;</h2><br>
+
+                    <h3>datetime</h3>
+                    <p>Especificamos la hora que queremos mostrar.</p>
+
+
+                </section>
+
+
+                <section id="8">
+                    <h1>Etiqueta &lt;figure&gt; & &lt;figcaption&gt;</h1>
+                    <p>La etiqueta <code> &lt;figure&gt;</code> da visualización de bloque de contenido que es autónoma, como una imagen, junto con un elemento <code>&lt;figcaption&gt;</code> opcional.</p>
+                    <div class="divejemplo">
+                        
+                        <div class="ejemplonavegador">
+                            <div class="circulos c1"></div>
+                            <div class="circulos c2"></div>
+                            <div class="circulos c3"></div>
+                            
+                            <div class="contenidos">
+                                <!-- Aquí dentro va el ejemplo (divs) -->
+                                <figure>
+                                    <img width="300px;" src="https://cimage.se/image/example/kodim23.png?width=600&height=200&crop-to-fit" alt="Imagen de un loro" />
+                                    <figcaption>Figura 1: Esta es una simple imagen.
+                                    </figcaption>
+                                </figure>
+
+                                <!-- Termina el ejemplo -->
+                            </div>
+                        </div>
+
+                        <div class="ejemplocodigo">
+                           <div class="contenidos ccodigo">
+                               <div class="codigo">
+                                    <!-- Aquí dentro va el ejemplo (código) -->
+                                   
+                                    <p>&lt;figure&gt;<br>
+                                    &lt;img width="300px;" src="https://cimage.se/image/loro.png" alt="Imagen de un loro"&gt;<br>
+                                    &lt;figcaption>Figura 1: Esta es una simple imagen.
+                                    &lt;/figcaption><br>
+                                &lt;/figure&gt;</p>
+
+                                    <!-- Termina el ejemplo -->
+                                </div>
+                           </div> 
+                        </div>
+                    </div>
+
+                </section>
+
+
+				<section id="9">
+					<h1>Etiqueta &lt;main&gt;</h1>
+						
+                        <p>La etiqueta <code>&lt;main&gt;</code> se usa para estabecer la sección del contenido de la página.</p>
+
+				</section>
+
+
+				<section id="10">
+					<h1>Etiqueta &lt;header&gt;</h1>
+
+                     <p>La etiqueta <code>&lt;header&gt;</code> se usa para estabecer la sección de la cabecera de la página.</p>
+						
+
+				</section>
+
+
+				<section id="11">
+					<h1>Etiqueta &lt;footer&gt;</h1>
+
+                     <p>La etiqueta <code>&lt;footer&gt;</code>, se usa para estabecer la sección del pie de la página.</p>
+						
+
+				</section>
+
+
+				<section id="12">
+					<h1>Etiqueta &lt;nav&gt;</h1>
+                     <p>La etiqueta <code>&lt;main&gt;</code>, se usa para estabecer la sección del menú de navegación de la página.</p>
+						
+
+				</section>
+
+
+				<section id="13">
+					<h1>Etiqueta &lt;article&gt;</h1>
+                    <p>La etiqueta <code>&lt;main&gt;</code>, se usa para estabecer la sección de artículo en la página.</p>
+						
+
+				</section>
+
+
+				<section id="14">
+					<h1>Etiqueta &lt;section&gt;</h1>
+                    <p>La etiqueta <code>&lt;section&gt;</code>, se usa para estabecer una sección en la página.</p>
+						
+
+				</section>
+
+
+				<section id="15">
+					<h1>Etiqueta &lt;aside&gt;</h1>
+
+                    <p>La etiqueta <code>&lt;aside&gt;</code>, se usa para estabecer la sección lateral de la página.</p>
+						
+
+				</section>
+				
+
+			</article>
+
+        	</div>
+        </div>
+        <aside class="lateral">
+            
+            <div class="lateral">
+
+            	<div class="contenidolateral">
+            		
+            		<h2>Contenido</h2>
+            		
+            		<ol>
+            			<a href="#1"><li>Etiqueta &lt;a&gt;</li></a>
+            			<a href="#2"><li>Etiqueta &lt;meter&gt;</li></a>
+            			<a href="#3"><li>Etiqueta &lt;img&gt;</li></a>
+            			<a href="#4"><li>Etiqueta &lt;video&gt;</li></a>
+                        <a href="#5"><li>Etiqueta &lt;audio&gt;</li></a>
+                        <a href="#6"><li>Etiqueta &lt;menu&gt;</li></a>
+                        <a href="#7"><li>Etiqueta &lt;time&gt;</li></a>
+                        <a href="#8"><li>Etiqueta &lt;figure&gt; & &lt;figcaption&gt;</li></a>
+                        <a href="#9"><li>Etiqueta &lt;main&gt;</li></a>
+                        <a href="#10"><li>Etiqueta &lt;header&gt;</li></a>
+                        <a href="#11"><li>Etiqueta &lt;footer&gt;</li></a>
+                        <a href="#12"><li>Etiqueta &lt;nav&gt;</li></a>
+                        <a href="#13"><li>Etiqueta &lt;article&gt;</li></a>
+                        <a href="#14"><li>Etiqueta &lt;secction&gt;</li></a>
+                        <a href="#15"><li>Etiqueta &lt;aside&gt;</li></a>
+            		</ol>
+
+            	</div>
+            	
+            </div>
+
+        </aside>
+    </div>
+    <footer>
+        <p>Web realizada por Marçal Alarcón Brugal - © 2021</p>
+    </footer>
+</body>
+</html>

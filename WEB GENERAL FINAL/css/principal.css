@@ -1,0 +1,55 @@
+/*ESTILOS PRINCIPALES (ESTOS ESTILOS SE APLICAN A TODOS LOS ELEMENTOS DEL SITIO WEB)*/
+/*ESTILOS PARA EL BODY*/
+body{
+
+	margin: auto;
+	background-color: #CAEBF2;
+	margin-top: -100px;
+}
+
+
+/*ESTILOS PARA EL HEADER*/
+header{
+
+	position: sticky;
+	top:0px;
+	z-index: 100;
+	display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+
+/*ESTILOS PARA EL FOOTER*/
+footer{
+
+	width: 100%;
+	height: auto;
+	background-color: gray;
+	float: left;
+	text-align: center;
+}
+
+footer p{
+
+	padding: 10px;
+	font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+/*LE QUITAMOS EL MARGIN POR DEFECTO QUE TIENEN LOS H1, H2, H3*/
+h1,h2{
+	margin: 0px;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+a:hover{
+	text-decoration: none;
+	color: #A9A9A9;
+}
+

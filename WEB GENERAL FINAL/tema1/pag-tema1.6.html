@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/principal.css">
+    <link rel="stylesheet" href="../css/tema.css">
+
+    <link rel="icon" type="image/png" href="../img/icono.jpg">
+    <title>LAS TABLAS - TEMA 1 APARTADO 6</title>
+</head>
+<body>
+    <header class="cabezera">
+        <iframe src="../menu.html" style="width: 100%; height: 120px; border: 0px;" target="_parent"></iframe>
+    </header>
+    <div class="divcabecera">
+    	
+
+    	<div class="cajatitulo">
+				<h1 class="titulotema">Planificación de interfaces web</h1>
+				<h2 class="tituloseccion">1.6 LAS TABLAS</h2>
+		</div>
+
+    </div>
+
+    <div class="general">
+        <div class="divprincipal">
+        	<div class="contenidocentral">
+
+                <article>
+                    <section id="1">
+                        <h1>¿Qué es una tabla?</h1>
+                        <p>Una tabla no es otra cosa más que un medio de organizar datos en filas y columnas. Como muchas otras estructuras de HTML, las tablas son construidas utilizando elementos.</p>
+
+                    </section>
+
+                    <section id="2">
+                        <h1>Elementos de una tabla</h1>
+                        <p>Para crear una tabla en HTML debemos de usar las siguientes etiquetas:</p>
+                        
+                        <h2>table</h2>
+                        <p>Con esta etiqueta establecemos el contenedor principal). Es muy importante abrir esta etiqueta al empezar la tabla y cerrarla cuando terminemos la tabla.</p>
+
+                        <h2>tr</h2>
+                        <p>Representando a las filas contenedoras de las celdas.</p>
+
+                        <h2>td</h2>
+                        <p>Representando a las celdas de la tabla.</p>
+
+                    </section>
+
+                    <section id="3">
+                        <h1>Estructura de las tablas</h1>
+                        <p>A la hora de crear tablas, es importante mantener una buena estructura, para ello deberemos de usar las siguientes etiquetas:</p>
+
+                        <h2>thead</h2>
+                        <p>Establecemos la cabecera de la tabla.</p>
+
+                        <h2>tbody</h2>
+                        <p>Establecemos el cuerpo de la tabla.</p>
+
+                        <h2>tfoot</h2>
+                        <p>Establecemos el pie de la tabla.</p>
+
+                    </section>
+
+                    <section id="4">
+                        <h1>Propiedades de las celdas</h1>
+                        <p>Cuando creamos una tabla, a las celdas les podemos asignar las siguientes prioridades:</p>
+
+                        <h2>RowSpan</h2>
+                        <p>Permitir que una celda ocupe más de una fila.</p>
+
+                        <h2>ColSpan</h2>
+                        <p>Permite que una celda ocupe más de una columna.</p>
+
+                    </section>
+
+                    <section id="5">
+                        <h1>Ejemplo de tabla</h1>
+                        
+
+                        <style type="text/css">
+    
+                            table.tablaejemplo {
+                              border-collapse: collapse;
+                              text-align: center;
+
+                            }
+
+                            th {
+                              padding: 10px;
+                            }
+
+                            td {
+                              margin: 15px;
+                              padding: 15px;
+                            }
+
+
+                            td, th{
+                                border: 3px solid black;
+                            }
+
+                            </style>
+
+                            <table class="tablaejemplo">
+
+                                <thead>
+                                    <tr>
+                                        <th>HORAS</th>
+                                        <th>Lunes</th>
+                                        <th>Martes</th>
+                                        <th>Miércoles</th>
+                                        <th>Jueves</th>
+                                        <th>Viernes</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>8:15</td>
+                                        <td>Desarrollo en Entorno Servidor</td>
+                                        <td rowspan="2">Diseño de Interfaces Web</td>
+                                        <td rowspan="2">Diseño de Interfaces Web</td>
+                                        <td rowspan="2">Desarrollo Web en Entorno Cliente</td>
+                                        <td rowspan="2">Despliegue de Aplicaciones Web</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>9:15</td>
+                                        <td rowspan="2">Diseño de Interfaces Web</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>10:15</td>
+                                        <td>Desarrollo Web en Entorno Cliente</td>
+                                        <td>Desarrollo Web en Entorno Cliente</td>
+                                        <td>Desarrollo Web en Entorno Servidor</td>
+                                        <td>Desarrollo Web en Entorno Cliente</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>11:15</td>
+                                        <td colspan="5">RECREO</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>11:45</td>
+                                        <td>Despliegue de Aplicaciones Web</td>
+                                        <td>Desarrollo Web en Entorno Cliente</td>
+                                        <td>Desarrollo Web en Entorno Cliente</td>
+                                        <td>Desarrollo Web en Entorno Servidor</td>
+                                        <td>Desarrollo Web en Entorno Cliente</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>12:45</td>
+                                        <td rowspan="2">Desarrollo Web en Entorno Servidor</td>
+                                        <td rowspan="2">Desarrollo Web en Entorno Servidor</td>
+                                        <td rowspan="2">Empresa e Iniciativa Emprendedora</td>
+                                        <td rowspan="2">Empresa e Iniciativa Emprendedora</td>
+                                        <td rowspan="2">Desarrollo Web en Entorno Servidor</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>13:45</td>
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                    </section>
+
+
+
+                </article>
+
+        	</div>
+        </div>
+        <aside class="lateral">
+            
+            <div class="lateral">
+
+            	<div class="contenidolateral">
+            		
+            		<h2>Contenido</h2>
+            		
+            		<ol>
+            			<a href="#1"><li>¿Qué es una tabla?</li></a>
+            			<a href="#2"><li>Elementos de una tabla</li></a>
+            			<a href="#3"><li>Estructura de las tablas</li></a>
+            			<a href="#4"><li>Propiedades de las celdas</li></a>
+                        <a href="#5"><li>Ejemplo de tabla</li></a>
+            		</ol>
+
+            	</div>
+            	
+            </div>
+
+        </aside>
+    </div>
+    <footer>
+        <p>Web realizada por Marçal Alarcón Brugal - © 2021</p>
+    </footer>
+</body>
+</html>

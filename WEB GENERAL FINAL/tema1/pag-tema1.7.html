@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/principal.css">
+    <link rel="stylesheet" href="../css/tema.css">
+
+    <link rel="icon" type="image/png" href="../img/icono.jpg">
+    <title>LOS FORMULARIOS - TEMA 1 APARTADO 7</title>
+</head>
+<body>
+    <header class="cabezera">
+        <iframe src="../menu.html" style="width: 100%; height: 120px; border: 0px;" target="_parent"></iframe>
+    </header>
+    <div class="divcabecera">
+    	
+
+    	<div class="cajatitulo">
+				<h1 class="titulotema">Planificación de interfaces web</h1>
+				<h2 class="tituloseccion">1.7 LOS FORMULARIOS</h2>
+		</div>
+
+    </div>
+
+    <div class="general">
+        <div class="divprincipal">
+        	<div class="contenidocentral">
+
+                <article>
+				<section id="1">
+					<h1>¿Qué es un formulario?</h1>
+					<p>Un formulario engloba un conjunto de campos que son enviados para ser procesados generalmente en el servidor web. A continuación veremos los tipos de etiquetas que tiene un formulario y sus atributos.</p>
+
+				</section>
+
+
+				<section id="2">
+					<h1>Etiqueta &lt;form&gt;</h1>
+					<p>Con esta etiqueta le decimos a HTML que vamos a crear un formulario (sin esta etiqueta el formulario no funciona).</p>
+
+					<p>La etiqueta Form tiene varios atributos que son:</p>
+
+
+					<h2>name</h2><br>
+
+						<p>Con este atributo le establecemos un nombre a nuestro formulario.</p>
+
+
+					<h2>action</h2><br>
+
+						<p>Con este atributo le establecemos la url del fichero donde procesa la información del formulario.</p>
+
+
+					<h2>method</h2><br>
+
+						<p>Con este atributo le establecemos el método HTTP que el navegador usará para enviar el formulario. A este atributo le podemos establecer:</p>
+
+						<ul>
+							<li><span>post:</span> Los datos del formulario son incluidos en el cuerpo del formulario y son enviados al servidor.</li>
+							<li><span>get:</span> Los datos del formulario son adjuntados a la url y esa url es la que se envía al servidor.</li>
+						</ul>
+
+
+					<h2>autocomplete</h2><br>
+
+						<p>Con este atributo indicamos cuales son los controles del formulario, es decir que sean los valores autocompletados por el navegador o no. En este atributo podemos establecer:</p>
+
+						<ul>
+							<li><span>off:</span> El usuario deberá de ingresar explicitamente cada valor dentro de cada campo.</li>
+							<li><span>on:</span> El navegador ayudará a autocompletar ese campo si previamente el usuario ha ingresado entradas previas a ese formulario.</li> 
+						</ul>
+
+						
+
+				</section>
+
+
+				<section id="3">
+					<h1>Etiqueta &lt;Label&gt;</h1>
+					<p>La etiqueta Label nos permite etiquetar de forma formal un campo de un formulario.</p>
+					<p>La etiqueta Label tiene varios atributos que son:</p>
+
+
+					<h2>for</h2><br>
+
+						<p>Con este atributo podemos enlazar la etiqueta con el campo. Para que eso suceda, debemos de escribir mismo id del campo que queremos que se seleccione.</p>
+
+						
+
+				</section>
+
+
+				<section id="4">
+					<h1>Etiqueta &lt;Input&gt;</h1>
+					<p>La etiqueta Input nos permite solicitarle a usuario información. En HTML podemos solicitar la información al usuario de muchas forma diferentes usando el atributo type.</p>
+
+					<p>La etiqueta Input tiene varios atributos que son:</p>
+
+
+					<h2>placeholder</h2><br>
+
+						<p>Con este atributo podemos establecer un texto que aparecerá encima del campo mientras esté vacío. Se suele usar para ayudar al usuario indicando que tiene que hacer o poniendo un ejemplo.</p>
+
+					
+					<h2>required</h2><br>
+
+						<p>Con este atributo podemos definir si ese campo va a ser obligatorio o no rellenarlo.</p>
+
+
+					<h2>pattern</h2><br>
+
+						<p>Con este atributo podemos validar el tipo de contenido que accepta el campo.</p>
+
+
+					<h2>min y max</h2><br>
+
+						<p>Con min podemos establecer el mínimo de carácteres que debe de tener ese campo.</p>
+						<p>Con max podemos establecer el máximo de carácteres que puede tener ese campo.</p>
+
+
+					<h2>step</h2><br>
+
+						<p>Con este atributo podemos definir los saltos que se darán en ese campo.</p>
+
+
+					<h2>disabled</h2><br>
+
+						<p>Con este atributo establecemos si el campo está activado o desactivado. Podemos establecer <span>true</span>(desactivado) o <span>false</span>(activado).</p>
+
+
+					<h2>autofocus</h2><br>
+
+						<p>Con este atributo definimos que campo obtiene el foco, es decir el campo donde se colocará el cursor automáticamente al cargar la página. Si queremos que ese campo tenga el foco escribimos el valor del atributo en <span>true</span>.</p>
+
+
+					<h2>autocomplete</h2><br>
+
+						<p>Con este atributo podemos establecer si ese campo se rellene automaticamente con el navegador o no.</p>
+
+
+				<h2>type</h2><br>
+
+						<p>Este es el atributo más importante de todo el input. Con este atributo definimos el tipo de campo. Actualmente en HTML hay todos estos tipos de campos:</p>
+
+
+						<ul>
+							<li><span>text:</span> El más común de todos, este campo sirve para escribir un texto.</li>
+
+							<li><span>search:</span> Definimos que el campo es de tipo búsqueda, de modo que se puede resaltar en los motores de búsqueda.</li> 
+
+							<li><span>password:</span> Definimos que el campo es de tipo contraseña encriptando los caracteres enmascarandolos con asteriscos.</li> 
+
+							<li><span>number:</span> Definimos que el campo es de tipo numérico (solo podemos escribir números).</li> 
+
+							<li><span>file:</span> Definimos que en este campo, el usuario pueda enviar ficheros de todo tipo.</li>
+
+							<li><span>url:</span> Campo de tipo texto, que solo nos dejará escribir valores con el formato de URL.</li>  
+
+							<li><span>email:</span> Campo de tipo texto, que solo nos dejará escribir valores con el formato de EMAIL.</li> 
+
+							<li><span>tel:</span> Campo de tipo número, que solo nos dejará escribir valores con el formato de un número de teléfono.</li> 
+
+							<li><span>date:</span> Definimos que el campo es de tipo fecha, permitiendo que el usuario seleccione una fecha de una forma fácil con el calendario que se muestra.</li>
+
+							<li><span>time:</span> Definimos que el campo es de tipo tiempo, permitiendo que el usuario seleccione una hora y los minutos.</li>  
+
+							<li><span>datetime:</span> Es una combinación de el campo date y time, permitiendo seleccionar una fecha y una hora.</li> 
+
+							<li><span>week:</span> Otro campo de tipo texto, que nos va a permitir seleccionar una semana del año.</li> 
+
+							<li><span>month:</span> Campo de tipo texto, donde podemos seleccionar un mes de año y un año concreto.</li> 
+
+							<li><span>color:</span> Campo de tipo color, nos permite seleccinar un color de la rueda cromática.</li> 
+
+							<li><span>range:</span> Definimos que el campo es de tipo rango, mostrando una barra para seleccionar un valor dentro de un rango.</li> 
+						</ul>
+
+						<p>También existe la etiqueta <span>textarea</span> que se usa de forma independiente sin el atributo type. Esta etiqueta permite insertar una caja de texto para escribir.</p>
+
+				</section>
+
+				<section id="5">
+					<h1>Etiquetas &lt;Fieldset&gt; y &lt;Legend&gt;</h1>
+					<p>Con la etiqueta Fieldset establecemos una sección en un formulario y con la etiqueta Legend le establecemos un nombre a esa sección.</p>
+
+						
+
+				</section>
+				
+
+
+			</article>
+
+        	</div>
+        </div>
+        <aside class="lateral">
+            
+            <div class="lateral">
+
+            	<div class="contenidolateral">
+            		
+            		<h2>Contenido</h2>
+            		
+            		<ol>
+            			<a href="#1"><li>¿Qué es un formulario?</li></a>
+            			<a href="#2"><li>Etiqueta FORM</li></a>
+            			<a href="#3"><li>Etiqueta LABEL</li></a>
+            			<a href="#4"><li>Etiqueta INPUT</li></a>
+                        <a href="#5"><li>Etiquetas FIELDSET y LEGEND</li></a>
+            		</ol>
+
+            	</div>
+            	
+            </div>
+
+        </aside>
+    </div>
+    <footer>
+        <p>Web realizada por Marçal Alarcón Brugal - © 2021</p>
+    </footer>
+</body>
+</html>

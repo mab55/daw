@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/principal.css">
+    <link rel="stylesheet" href="../css/tema.css">
+    <link rel="stylesheet" href="../css/ejemplos.css">
+
+    <link rel="icon" type="image/png" href="../img/icono.jpg">
+    <title>DISEÑO DE WEBS ACCESIBLES - TEMA 5 APARTADO 7</title>
+</head>
+<body>
+    <header class="cabezera">
+        <iframe src="../menu.html" style="width: 100%; height: 120px; border: 0px;" target="_parent"></iframe>
+    </header>
+    <div class="divcabecera">
+        
+
+        <div class="cajatitulo">
+                <h1 class="titulotema">Diseño de Webs Accesibles</h1>
+                <h2 class="tituloseccion">5.7 Técnicas ARIA</h2>
+        </div>
+
+    </div>
+
+    <div class="general">
+        <div class="divprincipal">
+            <div class="contenidocentral">
+
+                <article>
+                <section id="1">
+                    <h1>¿Qué son las técnicas ARIA?</h1>
+                    <p>Las técnicas CSS son técnicas establecidas para mejorar la accesibilidad y la percepción de la información en forma visual.</p> 
+
+
+                </section>
+
+
+                <section id="2">
+                    <h1>Técnicas ARIA más usadas</h1>
+                    <h2>1. Uso de Aria-Invalid para indicar un campo de error</h2>
+
+                    <p>Podemos utilizar el atributo “aria-invalid” para especificar al usuario si el campo que hemos rellenado tiene los datos erróneos o acertados.</p>
+
+                    <h3>Ejemplo</h3><br>
+                    <p>En un formulario, en el nos exige escribir una dirección de correo electrónico, usamos el atributo “invalid” cuando no se cumpla la condición, en este caso, que no se escribe la arroba.</p>
+                    <img src="..\img\tema5\sec7\aria1.png" width="75%"><br>
+
+
+
+                    <h2>2. Uso de aria-label para proporcionar una etiqueta invisible donde no se puede usar una etiqueta visible</h2>
+
+                    <p>Para los usuarios videntes, el contexto y la apariencia visual de un elemento pueden proporcionar pistas suficientes para determinar el propósito.</p>
+
+                    <h3>Ejemplo</h3><br>
+                    
+                    <img src="..\img\tema5\sec7\aria2.png" width="50%"><br>
+
+
+
+                    <h2>3. Uso del rol de región para identificar una región de la página</h2>
+
+                    <p>Esta técnica consiste en establecer una región a cada sección. Para que los lectores puedan saber de qué sección es el contenido.</p>
+
+                    <h3>Ejemplo</h3><br>
+                    <img src="..\img\tema5\sec7\aria3.jpg" width="75%"><br>
+
+
+
+                    <h2>4. Uso de rol = encabezado para identificar encabezados.</h2>
+
+                    <p>Esta técnica proporciona una forma para que las tecnologías de asistencia (AT) identifiquen un contenido como encabezado. Aplicar role = "header" a un elemento hace que un AT (como un lector de pantalla) lo trate como si fuera un encabezado.</p>
+
+                    <h3>Ejemplo</h3><br>
+                    
+                    <img src="..\img\tema5\sec7\aria4.png" width="75%"><br>
+
+
+
+                    <h2>5. Identificación de un campo obligatorio con la propiedad aria-required</h2>
+
+                    <p>Esta técnica proporciona una indicación programática de que un campo de formulario que se muestra a través de la presentación como obligatorio, es obligatorio para el envío exitoso de un formulario.</p>
+
+                    <h3>Ejemplo</h3><br>
+                    
+                    <img src="..\img\tema5\sec7\aria5.png" width="75%"><br>
+
+
+                    <h2>6. Uso de role = status para presentar mensajes de estado</h2>
+
+                    <p>Con este atributo mostramos el estado de algo. Así mostramos al usuario en qué estado se encuentra el contenido. Esta técnica es muy usada para los carritos de compra, así el usuario sabe al momento la cantidad de productos que tiene.</p>
+
+                    <h3>Ejemplo</h3><br>
+                    
+                    <img src="..\img\tema5\sec7\aria6.png" width="75%"><br>
+
+
+                    <h2>7. Uso de aria-label para fines de enlace</h2>
+
+                    <p>El atributo aria-label proporciona una forma de colocar una etiqueta de texto descriptivo en un objeto, como un enlace, cuando no hay elementos visibles en la página que describan el objeto. </p>
+
+                    <h3>Ejemplo</h3><br>
+                    
+                    <img src="..\img\tema5\sec7\aria7.png" width="75%"><br>
+
+
+                    <h2>8. Uso de aria-describedby para proporcionar descripciones de imágenes</h2>
+
+                    <p>El objetivo de esta técnica es proporcionar descripciones de imágenes cuando una alternativa de texto breve no transmite adecuadamente la función o información proporcionada en el objeto.</p>
+
+                    <h3>Ejemplo</h3><br>
+                    
+                    <img src="..\img\tema5\sec7\aria8.jpg" width="75%"><br>
+
+
+                    <h2>9. Uso de aria-labelledby para proporcionar un nombre para los controles de la interfaz de usuario</h2>
+
+                    <p>El propósito de esta técnica es proporcionar nombres para los controles de la interfaz de usuario que puedan leerse con tecnología de asistencia.
+                    La tecnología de asistencia, como los lectores de pantalla, utiliza este atributo para catalogar los objetos en un documento para que los usuarios puedan navegar entre ellos. Sin un ID de elemento, la tecnología de asistencia no puede catalogar el objeto.</p>
+
+                    <h3>Ejemplo</h3><br>
+                    
+                    <img src="..\img\tema5\sec7\aria9.png" width="75%"><br>
+
+
+
+                    <h2>10. Uso de roles de agrupación para identificar controles de formulario relacionados</h2>
+
+                    <p>El objetivo de esta técnica es marcar un conjunto de controles relacionados dentro de un formulario como un grupo. Cualquier etiqueta asociada con el grupo también sirve como etiqueta común o calificador para controles individuales en el grupo. Las tecnologías de asistencia pueden indicar el inicio y el final del grupo y la etiqueta del grupo a medida que uno navega dentro y fuera del grupo.</p>
+
+                    <h3>Ejemplo</h3><br>
+                    
+                    <img src="..\img\tema5\sec7\aria10.png" width="75%"><br>
+
+
+                </section>
+
+                
+            </article>
+
+            </div>
+        </div>
+        <aside class="lateral">
+            
+            <div class="lateral">
+
+                <div class="contenidolateral">
+                    
+                    <h2>Contenido</h2>
+                    
+                    <ol>
+                        <a href="#1"><li>¿Qué son las técnicas ARIA?</li></a>
+                        <a href="#2"><li>Técnicas ARIA más usadas</li></a>
+                    </ol>
+
+                </div>
+                
+            </div>
+
+        </aside>
+    </div>
+    <footer>
+        <p>Web realizada por Marçal Alarcón Brugal - © 2021</p>
+    </footer>
+</body>
+</html>

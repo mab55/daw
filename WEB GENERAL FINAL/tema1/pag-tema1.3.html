@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/principal.css">
+    <link rel="stylesheet" href="../css/tema.css">
+    <title>LOS ICONOS - TEMA 1 APARTADO 3</title>
+
+    <link rel="icon" type="image/png" href="../img/icono.jpg">
+</head>
+<body>
+    <header class="cabezera">
+        <iframe src="../menu.html" style="width: 100%; height: 120px; border: 0px;" target="_parent"></iframe>
+    </header>
+    <div class="divcabecera">
+    	
+
+    	<div class="cajatitulo">
+				<h1 class="titulotema">Planificación de interfaces web</h1>
+				<h2 class="tituloseccion">1.3 LOS ICONOS</h2>
+		</div>
+
+    </div>
+
+    <div class="general">
+        <div class="divprincipal">
+        	<div class="contenidocentral">
+
+                <article>
+				<section id="1">
+					<h1>¿Qué son los iconos?</h1>
+					<p>Los iconos son pequeñas imágenes encargadas de transmitir el contenido con solo mirarlos.</p>
+					<h3>Ejemplo</h3>
+					<img width="10%" src="../img/tema1/sec3/58326.png">
+					<p>Al ver este icono, rápidamente lo asociamos con borrar/eliminar algo.</p>
+
+				</section>
+
+
+				<section id="2">
+					<h1>Fuentes de iconos</h1>
+					<p>Actualmente existen librerías con iconos listos para usar en nuestra web. A continuación te voy a mostrar las librerías más usadas y a cómo insertarlas en tu web.</p>
+
+					<h2>Flaticon</h2>
+
+					<p>Para añadir Iconos de FlatIcons a tu proyecto debemos de:</p>
+					<ol>
+						<li>Entrar en <a target="_blank" href="https://www.flaticon.es/iconfonts">FlatIcon</a> y nos creamos una cuenta.</li>
+						<li>En la parte superior derecha nos aparecerá una sección que dice “Colecciones”, entramos dentro.</li>
+						<li>Nos descargamos la colección y la colocamos en la carpeta css de nuestro proyecto.</li>
+						<li>Cargamos con <code>&lt;link rel="stylesheet" type="text/css" href=“css/flaticon.css"&gt;</code> nuestra biblioteca de iconos.</li>
+
+						<li>Con las clases (escribiendo el nombre del icono) conseguimos que se muestre <code>&lt;i class="flaticon-airplane49">&lt;/i&gt;</code> o <code>&lt;span class="flaticon-airplane49"&gt;&lt;/span&gt;</code></li>
+					</ol>
+
+
+					<h2>GLYPHICONS</h2>
+
+					<p>Para añadir Iconos de Glyphicons a tu proyecto debemos de:</p>
+					<ol>
+						<li>Entrar en <a target="_blank" href="https://getbootstrap.com/docs/3.3/components/">Glyphicons</a>.</li>
+						<li>Nos descargamos  la librería.</li>
+						<li>Colocamos la librería en la carpeta del proyecto.</li>
+						<li>Con la clase llamamos el objeto que queramos: <code>&lt;span class="glyphicon glyphicon-search" aria-hidden="true"&gt;/&lt;span&gt;</code></li>
+					</ol>
+
+
+					<h2>FONT AWESOME</h2>
+
+					<p>Para añadir Iconos de Font Awesome a tu proyecto debemos de:</p>
+					<ol>
+						<li>Entrar en <a target="_blank" href="https://fontawesome.com/v5.15/icons/500px?style=brands">Font Awesome</a>.</li>
+						<li>Nos descargamos  la librería.</li>
+						<li>Colocamos la librería en la carpeta del proyecto.</li>
+						<li>Con la clase llamamos el icono que queramos: <code>&lt;i class="fab fa-500px"&gt;&lt;/i&gt;</code></li>
+					</ol>
+
+
+					<h2>IONICONS</h2>
+
+					<p>Para añadir Iconos de Ionicons a tu proyecto debemos de:</p>
+					<ol>
+						<li>Entrar en <a target="_blank" href="https://ionic.io/ionicons/v4">Ionicons</a>.</li>
+						<li>Nos descargamos  la librería.</li>
+						<li>Colocamos la librería en la carpeta del proyecto.</li>
+						<li>Con la clase llamamos el objeto que queramos: <code>&lt;ion-icon name="add"&gt;&lt;/ion-icon&gt;</code></li>
+					</ol>
+						
+
+					<h2>OCTICONS</h2>
+
+					<p>Para añadir Iconos de Octicons a tu proyecto debemos de:</p>
+					<ol>
+						<li>Entrar en <a target="_blank" href="https://icon-sets.iconify.design/octicon/">Octicons</a>.</li>
+						<li>En nuestro código HTML introducimos la siguiente línea para cargar la librería <code>&lt;script src="https://code.iconify.design/2/2.0.3/iconify.min.js"&gt;&lt;/script&gt;</code></li>
+						<li>Colocamos el siguiente código para insertar el icono <code>&lt;span class="iconify" data-icon="octicon:alert-16"&gt;&lt;/span&gt;</code></li>
+					</ol>
+
+
+					<h2>MATERIAL ICONS</h2>
+
+					<p>Para añadir Iconos de Material Icons a tu proyecto debemos de:</p>
+					<ol>
+						<li>Entrar en <a target="_blank" href="https://materialdesignicons.com/">Material Icons</a>.</li>
+						<li> Añadimos la siguiente librería a nuestro proyecto. <code>import { mdiAccountCheck } from '@mdi/js';</code></li>
+						<li>Añadimos a nuestro proyecto el código SVG que nos ha generado.</li>
+					</ol>
+				</section>
+
+			</article>
+
+        	</div>
+        </div>
+        <aside class="lateral">
+            
+            <div class="lateral">
+
+            	<div class="contenidolateral">
+            		
+            		<h2>Contenido</h2>
+            		
+            		<ol>
+            			<a href="#1"><li>¿Qué son los iconos?</li></a>
+            			<a href="#2"><li>Fuentes de iconos</li></a>
+            		</ol>
+
+            	</div>
+            	
+            </div>
+
+        </aside>
+    </div>
+    <footer>
+        <p>Web realizada por Marçal Alarcón Brugal - © 2021</p>
+    </footer>
+</body>
+</html>

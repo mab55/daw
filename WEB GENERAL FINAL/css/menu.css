@@ -1,0 +1,71 @@
+body{
+
+	margin: 0px;
+}
+
+nav{
+
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+
+}
+
+
+
+.navbar {
+  overflow: hidden;
+  background-color: white; 
+}
+
+.navbar a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 18px;
+  text-decoration: none;
+  
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 18px;  
+  border: none;
+  outline: none;
+  color: black;
+   padding: 18px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: #EFEFEF;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #EFEFEF;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: black;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: #A9A9A9;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}

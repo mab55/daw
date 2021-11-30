@@ -1,0 +1,110 @@
+div.divejemplo{
+
+	width: 100%;
+	height: 300px;
+	background-color: transparent;
+	position: relative;
+}
+
+div.ejemplonavegador{
+
+	width: 50%;
+	height: 300px;
+	background-color: white;
+	position: relative;
+	margin: 0px;
+	float: left;
+	box-shadow: 1px 1px 5px black;
+	border-radius: 10px;
+
+}
+
+div.ejemplocodigo{
+
+	width: 50%;
+	height: 300px;
+	background-color: transparent;
+	position: relative;
+	float: right;
+	margin: 0px;
+
+}
+
+div.circulos{
+
+	width: 17px;
+	height: 17px;
+	background-color: pink;
+	display: inline-block;
+	border-radius: 50px;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: -5px;
+}
+
+div.c1{
+	background-color: #E00011;
+}
+
+div.c2{
+	background-color: #E8CA12;
+}
+
+div.c3{
+	background-color: #29EE13;
+}
+
+div.contenidos{
+
+	margin: 2.5%;
+	background-color: transparent;
+	width: 95%;
+	height: 250px;
+	overflow-y: scroll;
+	overflow-x: disabled;
+	position: relative;
+}
+
+div.ccodigo{
+
+	margin-top: 0px;
+	height: 300px;
+}
+
+div.codigo{
+
+	background-color: #191919;
+	margin-left: 20px;
+	padding: 10px;
+	border-radius: 10px;
+	text-align: left;
+}
+
+div.codigo p{
+
+	color: white;
+}
+
+
+div.colorrojo{
+	background-color: red;
+}
+
+div.colorazul{
+	background-color: blue;
+}
+
+div.colorverde{
+	background-color: green;
+}
+
+
+
+div.redondo{
+	border-radius: 15px;
+}
+
+div.codigo p{
+
+	text-align: left;
+}

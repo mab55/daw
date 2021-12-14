@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/principal.css">
+    <link rel="stylesheet" href="../css/tema.css">
+
+    <link rel="icon" type="image/png" href="../img/icono.jpg">
+    <title>DESAROLLO DE INTERFACES WEB AMIGABLES - TEMA 6 APARTADO 1</title>
+</head>
+<body>
+    <header class="cabezera">
+        <iframe src="../menu.html" style="width: 100%; height: 120px; border: 0px;" target="_parent"></iframe>
+    </header>
+    <div class="divcabecera">
+    	
+
+    	<div class="cajatitulo">
+				<h1 class="titulotema">DESAROLLO DE INTERFACES WEB AMIGABLES</h1>
+				<h2 class="tituloseccion">6.1 Tipos de usuarios</h2>
+		</div>
+
+    </div>
+
+    <div class="general">
+        <div class="divprincipal">
+        	<div class="contenidocentral">
+
+                <article>
+				<section id="1">
+					<h1>1.1. Introducción a los tipos de usuarios</h1>
+					<p>La mitad de los usuarios tienen algún tipo de problema o dificultad para poder acceder a las aplicaciones o a la web.<br>
+                    La WAI es la iniciativa de usabilidad de la Web promovida por el consorcio web, y pretende ofrecer una guía estándar para todos los desarrolladores de navegadores, webs y herramientas.</p>
+
+				</section>
+
+
+				<section id="2">
+					<h1>1.2. Perfiles tipo</h1>
+					<p>Las técnicas están reunidas en este documento, al que se le hace referencia para cada uno de los casos:</p>
+                    <a href="https://www.w3.org/TR/WAI-WEBCONTENT-TECHS">https://www.w3.org/TR/WAI-WEBCONTENT-TECHS</a><br>
+
+					<p>Así como en esta guía que resume técnicas que deben facilitar los navegadores:</p>
+                    <a href="https://www.w3.org/TR/UAAG10/">https://www.w3.org/TR/UAAG10/</a><br>
+
+                    <p>También hay definidos unos estándares para dispositivos móviles, que son más recientes:</p>
+                    <a href="https://www.w3.org/WAI/standards-guidelines/mobile/">https://www.w3.org/WAI/standards-guidelines/mobile/</a><br>
+
+                </section>
+
+
+                <section id="3">
+                    <h1>1.3. Tipos de usuarios</h1>
+                    <p>A continuación vamos a detallar algunos ejemplos de usuarios o escenarios que se reflejan en la WAI.</p>
+
+                    <h2>Comprador online daltónico</h2>
+                    <p>El daltonismo o ceguera en colores ocurre cuando un usuario no es capaz de distinguir colores como el rojo y verde o azul y amarillo. Eso supone, que si un usuario no ve correctamente los colores, es posible que no sea capaz de ver bien todo el contenido de la web.</p>
+
+                    <h3>Solución</h3>
+                    <p>Para solucionar este problema, debemos de usar colores que contrasten (cómo por ejemplo el amarillo y el azul) usando una hoja de estilos externa para que el usuario pueda alterar los colores.<br>
+
+                    Midnight Lizard es una herramienta que se instala en el navegador y nos permite cambiar los colores de una web.</p>
+
+                    <img src="..\img\tema6\sec1\dal1.png" width="75%"><br>
+                    <img src="..\img\tema6\sec1\dal2.png" width="75%"><br>
+
+
+
+                    <h2>Periodista o reportero con discapacidad de manos</h2>
+                    <p>La discapacidad de manos supone desde una descoordinación motora de los dedos, manos o brazos o ausencia de ellos. Normalmente este tipo de usuarios suelen usar un ratón especial y un sistema de reconocimiento por voz.</p>
+
+                    <h3>Solución</h3>
+                    <p>Para solucionar este problema podemos usar un teclado en pantalla y además facilitar al usuario Access Keys (atajos de teclado), para acceder a las secciones de la web de forma fácil y rápida.<br>
+
+                    Con la herramienta de Teclado Virtual, cómo su nombre indica, nos permite añadir de forma fácil y rápida un teclado por pantalla. Aparte, esta herramienta incluye un selector de idioma, con el cual puedes seleccionar la distribución de teclado que queremos que se muestre.</p>
+
+                    <img src="..\img\tema6\sec1\tec1.png" width="75%"><br>
+                    <img src="..\img\tema6\sec1\tec2.png" width="75%"><br>
+
+
+
+                    <h2>Estudiante sordo online</h2>
+                    <p>Una persona sorda no es capaz de escuchar los sonidos que suceden a su alrededor. Eso a la hora de navegar por una web, solo le afectan los contenidos multimedia.</p>
+
+                    <h3>Solución</h3>
+                    <p>La mejor solución para este tipo de usuarios es proporcionar subtítulos a todos los vídeos de nuestro sitio web.<br>
+                    A continuación, te dejo un tutorial donde se explica cómo añadir subtítulos a un vídeo de YouTube:</p>
+
+                    <center>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/SAsZfuNigew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </center><br>
+
+
+
+                    <h2>Juvilado</h2>
+                    <p>Una persona jubilada, es una persona que poco a poco va perdiendo cualidades (la vista, la destreza, la atención, el oído e incluso la memoria).</p>
+
+                    <h3>Solución</h3>
+                    <p>Para solucionar este problema, a la hora de diseñar las interfaces web, debemos de tener en cuenta el uso de interfaces sin movimiento, con textos e imágenes a buena escala.<br>
+                    Lupa para Google Chrome, es una herramienta que convierte el puntero del ratón en una lupa.</p>
+
+                    <img src="..\img\tema6\sec1\lup1.png" width="75%"><br>
+
+				</section>
+
+
+
+                <section id="4">
+                    <h1>1.4. Diversidad por habilidades</h1>
+                    <p>En este enlace podemos ver un documento de la WAI sobre cómo las personas con discapacidad utilizan la web:</p>
+                    <a href="https://www.w3.org/WAI/people-use-web/es">https://www.w3.org/WAI/people-use-web/es</a><br>
+                    <p>Además de los perfiles vistos anteriormente, la WAI puede clasificar los tipos de usuarios de forma más genérica según sus impedimentos:</p>
+
+                    <h2>Impedimentos de edad</h2>
+                    <p>La edad causa que de forma irremediable se suman problemas de vista, de habilidad, de oído, etc., y también el tener que adaptarse a los cambios y nuevas tecnologías.<br>
+
+                    Por ejemplo, un abuelo que aún maneja un nokia tendrá problemas para adaptarse al iPhone nuevo que sus nietos le han regalado.</p>
+
+
+                    <h2>Múltiples impedimentos</h2>
+                    <p>Los impedimentos a veces no vienen solos y se pueden acumular.<br>
+                    Por ejemplo, una persona que tenga tanto problemas de visión como de audición.</p>
+
+
+                    <h2>Impedimentos de salud</h2>
+                    <p>El hecho de tener buena salud, no nos referimos a estar físicamente bien. Se pueden tener problemas de aguante, de concentración o destreza. Ya no es el hecho de tener una discapacidad, sino estar fatigado o dolorido.<br>
+                    Por ejemplo, un administrativo sin discapacidad, pero sufre de migrañas (dolores de cabeza), y eso hará que haya días que no rinda al máximo en el trabajo.</p>
+
+
+                    <h2>Habilidades cambiantes</h2>
+                    <p>También pueden salir impedimentos cuando las habilidades no se mantienen constantes. Puede ocurrir que las condiciones de un usuario cambie de repente.<br>
+                    Por ejemplo, una persona que siempre ha tenido un iPhone, se le rompe y no le queda otra que comprarse un Samsung. Tendrá problemas al adaptarse a un dispositivo distinto.</p>
+
+
+                    <h2>Impedimentos temporales</h2>
+                    <p>Estos impedimentos le pueden ocurrir a cualquier persona a lo largo de su vida, ya sea causado por un accidente, enfermedad o medicación. Normalmente, es aquí cuando una persona sin discapacidades es consciente de los impedimentos que sufre una persona con discapacidad.<br>Por ejemplo, un programador que está en la oficina se pilla violentamente la mano contra una puerta y se rompe un dedo. A la hora de teclear no lo podrá hacer de forma habitual.</p>
+
+
+                    <h2>Limitaciones circunstanciales</h2>
+                    <p>Estos impedimentos no les afectan a las personas de forma directa, sino que son producidos por los dispositivos que se dispone, de la infraestructura, de la capacidad de la red...<br>
+                    Por ejemplo, cuando en un instituto hay una gran demanda de red, ésta se ralentiza o se cae (hola Hitron).</p>
+
+                </section>
+				
+				
+			</article>
+
+        	</div>
+        </div>
+        <aside class="lateral">
+            
+            <div class="lateral">
+
+            	<div class="contenidolateral">
+            		
+            		<h2>Contenido</h2>
+            		
+            		<ol>
+            			<a href="#1"><li>Introducción a los tipos de usuarios</li></a>
+            			<a href="#2"><li>Perfiles tipo</li></a>
+                        <a href="#3"><li>Tipos de usuarios</li></a>
+                        <a href="#4"><li>Diversidad por habilidades</li></a>
+            		</ol>
+
+            	</div>
+            	
+            </div>
+
+        </aside>
+    </div>
+    <footer>
+        <p>Web realizada por Marçal Alarcón Brugal - © 2021</p>
+    </footer>
+</body>
+</html>

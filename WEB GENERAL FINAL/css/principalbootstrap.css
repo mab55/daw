@@ -1,0 +1,167 @@
+/*ESTILOS PRINCIPALES (ESTOS ESTILOS SE APLICAN A TODOS LOS ELEMENTOS DEL SITIO WEB)*/
+/*ESTILOS PARA EL BODY*/
+body{
+
+	margin: auto;
+	background-color: #CAEBF2;
+	margin-top: 0px;
+}
+
+.cabecera{
+
+	width: 100%;
+	height: auto;
+	background-color: #A9A9A9;
+	padding: 100px;
+	padding-top: 150px;
+	text-align: center;
+	font-family: 'Bebas Neue';
+	letter-spacing: 5px;
+}
+
+.contenido{
+
+	width: 100%;
+	padding: 20px;
+	background-color: white;
+
+}
+
+.lateral{
+
+	width: 100%;
+	padding: 20px;
+	background-color: white;
+}
+
+.footer{
+	width: 100%;
+}
+
+/*LE QUITAMOS EL MARGIN POR DEFECTO QUE TIENEN LOS H1, H2, H3*/
+h1,h2{
+	margin: 0px;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+a:hover{
+	text-decoration: none;
+	color: #A9A9A9;
+}
+
+
+
+.cabecera h1{
+	font-size: 80px;
+	color: #EFEFEF;
+}
+
+.cabecera h2{
+	font-size: 55px;
+	color: #EFEFEF;
+	letter-spacing: 3px;
+}
+
+.contenido h1{
+	font-family: 'Bebas Neue';
+    background-color: #EFEFEF;
+    padding: 10px;
+    font-size: 30px;
+    margin: 0px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.contenido h2{
+
+	font-family: 'Bebas Neue';
+    background-color: #EFEFEF;
+    padding: 10px;
+    font-size: 20px;
+    margin: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    letter-spacing: 1.2px;
+    margin-top: 20px;
+}
+
+.contenido h3{
+	font-family: 'Bebas Neue';
+    background-color: #F9F9F9;
+    padding: 10px;
+    font-size: 17px;
+    margin: 10px;
+    margin-bottom: 0px;
+    display: inline-block;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+.contenido p{
+	font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: justify;
+}
+
+.contenido section{
+
+	margin-bottom: 60px;
+}
+
+.lateral h2{
+	font-family: 'Bebas Neue';
+    font-size: 30px;
+    margin: 0px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    background-color: #EFEFEF;
+    padding: 10px;
+}
+
+.footer{
+    background-color: black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+    text-align: center;
+    margin: 0;
+    color:white;
+}
+
+.footer a{
+	color: white;
+}
+
+.footer a:hover{
+	color: gray;
+}
+
+.ejemplo{
+	background-color: black;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: white;
+	padding: 20px;
+}
+
+.bi{
+	font-size: 50px;
+	margin: 20px;
+}
+
+.contenido li{
+	font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: justify;
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+}

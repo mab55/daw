@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/principal.css">
+    <link rel="stylesheet" href="../css/cssflexbox.css">
+    <link rel="stylesheet" href="../css/ejemplosformularios.css">
+
+    <link rel="icon" type="image/png" href="../img/icono.jpg">
+    <title>USO DE ESTILOS - TEMA 2 APARTADO 9</title>
+</head>
+<body>
+    <header class="cabezera">
+        <iframe src="../menu.html" style="width: 100%; height: 120px; border: 0px;" target="_parent"></iframe>
+    </header>
+    <div class="divcabecera">
+    	
+
+    	<div class="cajatitulo">
+				<h1 class="titulotema">Uso de estilos</h1>
+				<h2 class="tituloseccion">2.9 Fondos</h2>
+		</div>
+
+    </div>
+
+
+    <div class="contenido">
+        
+        <div class="contenidoprincipal">
+            
+            <article>
+                <section id="1">
+                    <h1>9.1 Introducción a los fondos</h1>
+                    <p>En CSS, existe la propiedad background que sirve para darle estilos al fondo. En esta sección, iremos viendo cada una de las propiedades CSS para el fondo.</p>
+
+
+                </section>
+
+
+                <section id="2">
+                    <h1>9.2 Los colores de fondo</h1>
+                    <p>Para aplicarle un color de fondo a nuestra web, usamos la propiedad background-color. Esta propiedad se le podemos aplicar a cualquier elemento de nuestra página y ese elemento, tendrá ese color de fondo.</p>
+
+                    <p>Podemos especificar el color de fondo de tres forma diferentes:</p>
+
+                    <ul>
+                        <li>Colores sólidos de CSS (green, red, blue…)</li>
+                        <li>Colores RGB (255 255 0)</li>
+                        <li>Colores hexadecimales (#E0E0E0)</li>
+                    </ul>
+
+                    <p>La sintaxis de background-color es: <code>background-color: color;</code></p>
+
+
+                </section>
+
+
+                <section id="3">
+                    <h1>9.3 Las imágenes de fondo</h1>
+                    <p>En CSS para aplicar una imagen de fondo a nuestra web, usamos la propiedad background-image. Esta propiedad se le puede aplicar a cualquier elemento de nuestra página y ese elemento, tendrá esa imagen de fondo.</p>
+
+                    <p>La sintaxis de background-image es: <code>background-image: url(ruta_img);</code></p><br>
+
+
+                    <p>A la imagen de fondo le podemos aplicar diferentes propiedades:</p>
+
+                    <h3>Repetición del fondo</h3>
+                    <p>La propiedad background-repeat se usa para controlar el comportamiento de tipo mosaico de las imágenes. Los valores disponibles son:</p>
+
+                    <ul>
+                      <li><strong>no-repeat:</strong> evita que el fondo se repita.</li>
+                      <li><strong>repeat-x:</strong> repite horizontalmente.</li>
+                      <li><strong>repeat-y:</strong> repite verticalmente.</li>  
+                      <li><strong>repeat:</strong> es el valor por defecto; repite en ambas direcciones.</li>  
+                    </ul>
+
+
+                    <h3>Dimensionar la imagen de fondo</h3>
+                    <p>La propiedad background-size permite establecer un tamaño al fondo. A esta propiedad le podemos establecer un tamaño en porcentaje o pixeles.</p>
+
+                    <p>También puedes utilizar alguna de estas palabras clave:</p>
+
+                    <ul>
+                      <li><strong>cover:</strong> el navegador agrandará la imagen lo suficientemente grande como para que esta cubra por completo el área de la caja sin que pierda su relación de aspecto. En este caso, es probable que parte de la imagen quede fuera de la caja.</li>
+                      <li><strong>contain:</strong> el navegador adecuará el tamaño de la imagen para que quepa dentro de la caja. En este caso, pueden quedar huecos a ambos lados o en la parte superior e inferior de la imagen si la relación de aspecto de la imagen es diferente de la de la caja.</li>  
+                    </ul>
+
+
+                    <h3>Posicionar la imagen de fondo</h3>
+                    <p>La propiedad background-position te permite elegir la posición en la que aparece la imagen de fondo dentro de la caja a la que está asociada. Para ello se utiliza un sistema de coordenadas en el que la esquina superior izquierda de la caja es (0,0), y la caja se coloca sobre los ejes horizontal (x) y vertical (y).</p>
+
+                    <p>Podemos combinar las palabras clave top, bottom, right y left para posicionar el fondo en esa posición.</p>
+
+                    <ul>
+                      <li><strong>cover:</strong> el navegador agrandará la imagen lo suficientemente grande como para que esta cubra por completo el área de la caja sin que pierda su relación de aspecto. En este caso, es probable que parte de la imagen quede fuera de la caja.</li>
+                      <li><strong>contain:</strong> el navegador adecuará el tamaño de la imagen para que quepa dentro de la caja. En este caso, pueden quedar huecos a ambos lados o en la parte superior e inferior de la imagen si la relación de aspecto de la imagen es diferente de la de la caja.</li>  
+                    </ul>
+
+
+                    <h3>Degradados de fondo</h3>
+                    <p>Con CSS, también podemos crear fondos con degradados usando la propiedad gradient.</p>
+
+                    <p>Diferentes tipos de gradient:</p>
+
+                    <ul>
+                      <li><strong>Linear-gradient:</strong> El color se desvanece suavemente a lo largo de una línea imaginaria.</li>
+                      <li><strong>Radial-gradient:</strong> Cuanto más lejos de un origen sea un punto, más lejos del color original será.</li>  
+                      <li><strong>Repeating-linear-gradient:</strong> Se repite el gradiente hasta llenar todo el fondo de forma lineal.</li>
+                      <li><strong>Repeating-radial-gradient:</strong> Se repite el gradiente hasta llenar todo el fondo de forma radial.</li>
+                    </ul>
+
+                    <p>A la hora de crear un gradiente, le podemos especificar la posición, la orientación, los colores y cuando ocupa cada uno de los colores.</p>
+
+
+                    <h3>Múltiples imágenes de fondo</h3>
+                    <p>CSS permite colocar todas las imágenes de fondo, las capas van del último elemento de la lista, al primero</p>
+
+
+                    <h3>Anclaje del fondo</h3>
+                    <p>A la hora de desplazarse por el sitio web, existe la propiedad background-attachment que define cómo se desplazan los elementos junto al fondo.</p><br>
+
+                    <p>Esta propiedad tiene los siguientes métodos:</p>
+
+                    <ul>
+                      <li><strong>scroll:</strong> Hace que el fondo del elemento se desplace cuando te desplazas por el contenido de la página. Si te desplazas por el contenido del elemento, el fondo no se mueve. El efecto resultante es que el fondo está anclado a la página en una posición fija, por lo que se desplaza a medida que la página se desplaza.</li>
+                      <li><strong>fixed:</strong> Hace que el fondo de un elemento quede fijo con respecto a la ventana gráfica, de modo que no se desplace cuando te desplazas por la página o el contenido del elemento. Siempre permanece en la misma posición de la pantalla.</li>
+                      <li><strong>local:</strong> Este valor se añadió posteriormente (solo es compatible con Internet Explorer 9+, mientras que los otros son compatibles con IE4+) porque el valor scroll es bastante confuso y en muchos casos no hace lo que deseas. El valor local ancla el fondo al elemento en el que está configurado, de modo que cuando te desplazas por el contenido del elemento, el fondo se desplaza con este.</li>
+                    </ul>
+
+
+                    
+
+                </section>
+
+                
+            </article>
+
+        </div>
+
+        <div class="contenidolateral">
+            
+            <h2>Contenido</h2>
+                    
+            <ol>
+                <a href="#1"><li>Introducción a los fondos</li></a>
+                <a href="#2"><li>Los colores de fondo</li></a>
+                <a href="#3"><li>Las imágenes de fondo</li></a>
+                
+            </ol>
+
+        </div>
+
+
+    </div>
+
+    
+    <footer>
+        <p>Web realizada por Marçal Alarcón Brugal - © 2021</p>
+    </footer>
+</body>
+</html>

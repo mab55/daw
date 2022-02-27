@@ -1,0 +1,43 @@
+img{
+
+	height: 300px;
+}
+
+.ejemplo1 {
+-webkit-filter: blur(3px);
+filter: blur(3px);
+}
+
+.ejemplo2 {
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+}
+
+.ejemplo3 {
+-webkit-filter: invert(100%);
+filter: invert(100%);
+}
+
+.ejemplo4 {
+-webkit-filter: sepia(100%);
+}
+
+.ejemplo5 {
+-webkit-filter: hue-rotate(45deg);
+filter: hue-rotate(45deg);
+}
+
+.ejemplo6 {
+-webkit-filter: brightness(50%);
+filter: brightness(50%);
+}
+
+.ejemplo7 {
+-webkit-filter: contrast(200%);
+filter: contrast(200%);
+}
+
+.ejemplo8 {
+-webkit-filter: saturate(250%);
+filter: saturate(250%);
+}

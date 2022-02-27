@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/principal.css">
+    <link rel="stylesheet" href="../css/cssflexbox.css">
+    <link rel="stylesheet" href="../css/ejemplostablas.css">
+
+    <link rel="icon" type="image/png" href="../img/icono.jpg">
+    <title>USO DE ESTILOS - TEMA 2 APARTADO 7</title>
+</head>
+<body>
+    <header class="cabezera">
+        <iframe src="../menu.html" style="width: 100%; height: 120px; border: 0px;" target="_parent"></iframe>
+    </header>
+    <div class="divcabecera">
+    	
+
+    	<div class="cajatitulo">
+				<h1 class="titulotema">Uso de estilos</h1>
+				<h2 class="tituloseccion">2.7 Tablas con estilos</h2>
+		</div>
+
+    </div>
+
+
+    <div class="contenido">
+        
+        <div class="contenidoprincipal">
+            
+            <article>
+                <section id="1">
+                    <h1>7.1 Introducción a las tablas con estilos CSS</h1>
+                    <p>En HTML, las tablas son un elemento que a simple vista queda muy simple… es por eso, que gracias a los estilos CSS, podemos modificarlas para que se vean mejor…<br>
+                    A continuación te voy a explicar algunos consejos para mejorar tus tablas con unas simples líneas de código CSS.</p>
+
+
+                </section>
+
+
+                <section id="2">
+                    <h1>7.2 Espaciado y distribución</h1>
+                    <p>Lo primero que tenemos que solucionar es el espaciado por defecto, que por defecto en HTML está tan apretado que casi no sabes qué elemento es de cada celda.<br>
+                    Las propiedades que veremos para el espaciado y distribución son:</p>
+
+                    <ul>
+                        <li><strong>table-layout:</strong> Establece el tamaño de las celdas.</li>
+                        <p>Con esta propiedad existen 4 propiedades que son: auto | fixed | initial | inherit.</p>
+
+                        <li><strong>width:</strong> Establece el tamaño de la tabla. Este valor es recomendable ponerlo al 100%, así ocupará siempre el 100% del contenedor donde se encuentre, siendo así una tabla responsiva.</li>
+
+                        <li><strong>border:</strong> Establece un borde alrededor de la tabla.</li>
+
+                        <li><strong>border-collapse:</strong> Reduce de dos bordes a uno.</li>
+
+                        <li><strong>Padding:</strong> Realiza un relleno hueco dentro de cada elemento. Esto hace que si le aplicamos este estilo a las celdas, les da a los datos un espacio para que los elementos respiren mejor y mejora la legibilidad de la tabla.</li>
+
+                    </ul>
+
+                </section>
+
+
+                <section id="3">
+                    <h1>7.3 Un poco de tipografía</h1>
+                    <p>Otro aspecto importante para la legibilidad de las tablas, es la tipografía. Por defecto la fuente que nos trae una tabla de HTML es muy simple y básica.<br>
+                    A continuación, te voy a enseñar las propiedades aplicables para los textos de las tablas:</p>
+
+                    <ul>
+                        <li><strong>font-family:</strong> Cambia el tipo de fuente a la que desees. Por defecto hay pocas fuentes, pero puedes importar una fuente de Google o importarla a tu proyecto.</li>
+
+                        <li><strong>letter-spacing:</strong> Define el espacio entre las letras. Este valor depende de la fuente y se suele establecer en píxeles.</li>
+
+                        <li><strong>text-align:</strong> Establecemos la alineación del texto. Sus valores son: left | right | center | justify | initial | inherit.</li>
+
+                    </ul>
+
+                </section>
+
+
+                <section id="4">
+                    <h1>7.4 Gráficos y colores</h1>
+                    <p>A las tablas, les podemos aplicar estilos de gráficos y colores poniendo una imagen de fondo con background-image, poniéndole un color sólido de fondo con background-color o haciendo un gradiente con gradient.</p>
+
+                </section>
+
+
+                <section id="5">
+                    <h1>7.5 Un poco de tipografía</h1>
+                    <p>Otro truco muy importante a la hora de aplicar estilos a las tablas, es usar la técnica llamada “Rayas de cebra”. Esta técnica consiste en alternar el fondo de cada una de las filas. Así facilitamos muchísimo más la legibilidad.</p>
+
+                    <p>La forma más sencilla de conseguir este efecto, es con la pseudoclase nth-child, donde le aplicaremos la palabra odd para las líneas pares y even para las líneas impares.</p>
+
+                </section>
+
+
+                <section id="6">
+                    <h1>7.6 Ejemplo de tabla</h1>
+                    <div class="ejemplo">
+                        <table>
+                            <tr>
+                              <th>Firstname</th>
+                              <th>Lastname</th>
+                              <th>Savings</th>
+                            </tr>
+                            <tr>
+                              <td>Peter</td>
+                              <td>Griffin</td>
+                              <td>$100</td>
+                            </tr>
+                            <tr>
+                              <td>Lois</td>
+                              <td>Griffin</td>
+                              <td>$150</td>
+                            </tr>
+                            <tr>
+                              <td>Jhon</td>
+                              <td>Griffin</td>
+                              <td>$150</td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+                
+            </article>
+
+        </div>
+
+        <div class="contenidolateral">
+            
+            <h2>Contenido</h2>
+                    
+            <ol>
+                <a href="#1"><li>Introducción a las tablas con estilos CSS</li></a>
+                <a href="#2"><li>Espaciado y distribución</li></a>
+                <a href="#3"><li>Un poco de tipografía</li></a>
+                <a href="#4"><li>Gráficos y colores</li></a>
+                <a href="#5"><li>Un poco de tipografía</li></a>
+                <a href="#6"><li>Ejemplo de tabla</li></a>
+                
+            </ol>
+
+        </div>
+
+
+    </div>
+
+    
+    <footer>
+        <p>Web realizada por Marçal Alarcón Brugal - © 2021</p>
+    </footer>
+</body>
+</html>

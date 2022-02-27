@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/principal.css">
+    <link rel="stylesheet" href="../css/cssflexbox.css">
+    <link rel="stylesheet" href="../css/ejemplosgrid.css">
+
+    <link rel="icon" type="image/png" href="../img/icono.jpg">
+    <title>USO DE ESTILOS - TEMA 2 APARTADO 4</title>
+</head>
+<body>
+    <header class="cabezera">
+        <iframe src="../menu.html" style="width: 100%; height: 120px; border: 0px;" target="_parent"></iframe>
+    </header>
+    <div class="divcabecera">
+    	
+
+    	<div class="cajatitulo">
+				<h1 class="titulotema">Uso de estilos</h1>
+				<h2 class="tituloseccion">2.4 Grid</h2>
+		</div>
+
+    </div>
+
+
+    <div class="contenido">
+        
+        <div class="contenidoprincipal">
+            
+            <article>
+                <section id="1">
+                    <h1>4.1 Introducción a Grid</h1>
+                    <p>FLEX y GRID son dos nuevos valores (HTML5) que vamos a poder dar a la propiedad CSS display y que nos van a permitir, junto con otras propiedades, maquetar nuestras páginas web de una manera más fácil a la que se usaba tradicionalmente.</p>
+
+                    <p>Grid es mucho más potente que Flexbox, ya que permite trabajar con filas y columnas y no en una dimensión como hace flexbox.</p>
+
+
+                </section>
+
+
+                <section id="2">
+                    <h1>4.2 Conceptos Grid</h1>
+                    <p>Antes de empezar a trabajar con Grid, es importante que conozcas los siguientes conceptos:</p>
+
+                    <ul>
+                        <li><strong>Contenedor:</strong> El elemento padre contenedor que definirá la cuadrícula o rejilla.</li>
+                        <li><strong>Ítem:</strong> Cada uno de los hijos que contiene la cuadrícula (elemento contenedor).</li>
+                        <li><strong>Celda (grid cell):</strong> Cada uno de los cuadritos (unidad mínima) de la cuadrícula.</li>
+                        <li><strong>Area (grid area):</strong> Región o conjunto de celdas de la cuadrícula.</li>
+                        <li><strong>Banda (grid track):</strong> Banda horizontal o vertical de celdas de la cuadrícula.</li>
+                        <li><strong>Línea (grid line):</strong> Separador horizontal o vertical de las celdas de la cuadrícula.</li>
+                    </ul>
+                    <img style="width: 50%" src="..\img\tema2\sec4\grid-css-conceptos.png"><br>
+
+                </section>
+
+
+                <section id="3">
+                    <h1>4.3 Activar Grid</h1>
+                    <p>Lo primero que hay que hacer es darle un valor a la propiedad DISPLAY del contenedor. Existen dos valores posibles:</p>
+
+
+                    <h3>Display: grid</h3>
+                    <p> Permite que el contenedor sea de bloque. Similar a block, ocupa todo el ancho del padre.</p>
+
+                    
+                    <h3>Display: inline-grid</h3>
+                    <p>Permite que el contenedor sea de línea. Similar a inline-block, ocupa solo el contenido.</p>
+
+
+                </section>
+
+
+                <section id="4">
+                    <h1>4.4 Definir la estructura del Grid</h1>
+                    <p>Es posible crear cuadrículas con un tamaño explícito. Para ello, sólo tenemos que usar las propiedades CSS grid-template-columns y grid-template-rows, que sirven para indicar las dimensiones de cada celda de la cuadrícula, diferenciando entre columnas y filas. Las propiedades son las siguientes:</p>
+
+
+
+                    <h3>grid-template-columns:</h3>
+                    <p>Número de columnas del grid y tamaño de las mismas.</p>
+
+                    <h3>grid-template-rows:</h3>
+                    <p>Número de filas del grid y tamaño de las mismas.</p>
+
+                    
+                    <h3>⚠ IMPORTANTE ⚠</h3>
+                    <p>A la hora de crear las filas y columnas, podemos especificar el tamaño de ellas de estas formas diferentes:</p>
+                    <ul>
+                        <li><strong>Porcentaje:</strong> Usamos el símbolo de "%" para que esa fila/columna ocupe ese porcentaje de la pantalla.</li>
+                        <p>Un ejemplo con porcentajes sería: <code>grid-template-columns: 25% 50% 25%;</code></p>
+
+                        <li><strong>Auto:</strong> Usamos la palabra de "auto" para que esa fila o columna ocupe de forma automáticamente lo que crea necesite usar.</li>
+                        <p>Un ejemplo con auto sería: <code>grid-template-columns: auto auto auto auto;</code></p>
+
+                        <li><strong>Píxeles:</strong> Usamos los píxeles (px) para que esa fila o columna ocupe los píxeles indicados.</li>
+                        <p>Un ejemplo con píxeles sería: <code>grid-template-columns: 100px 200px 100px;</code></p>
+
+                        <li><strong>Fracciones:</strong> Usamos las fracciones (fr) para que esa fila o columna ocupe el espacio restante.</li>
+                        <p>Un ejemplo con fracciones sería: <code>grid-template-columns: 1fr 1fr;</code></p>
+
+                        <li><strong>Nombre:</strong> A cada fila o columna le podemos establecer un nombre (método más avanzado), así es más fácil posicionar los elementos luego.</li>
+                        <p>Un ejemplo con nombres sería sería: <code>grid-template-columns: [menu]100px [logo]50px;</code></p>
+
+                        <li><strong>Repeat:</strong> Usamos repeat para simplificar el código, en caso de que sea repetitivo. Dentro del parenteis indicamos la cantidad de veces que queremos que se repita, el tamaño de cada elemento y opcionalmente le podemos poner un nombre.</li>
+                        <p>Un ejemplo con repeat sería: <code>grid-template-columns: repeat(3,20% [menu]);</code></p>
+                    </ul>
+
+
+                    <p>A parte de las propiedades grid-template-columns y grid-template-rows, existen 2 propiedades para establecer la separación entre filas y columnas:</p>
+
+                    <h3>grid-column-gap:</h3>
+                    <p>Establece la separación entre columnas.</p>
+
+                    <h3>grid-row-gap:</h3>
+                    <p>Establece la separación entre filas.</p>
+
+                </section>
+
+
+                <section id="5">
+                    <h1>4.5 Propiedades de alineación</h1>
+                    <p>Para la alineación, existen 3 propiedades clave que son:</p>
+
+
+                    <h3>Justify-items:</h3>
+                    <p>Se usa para alinear horizontalmente el conteido que hay dentro de las celdas. Siempre por defecto es "stretch".</p>
+                    <p>Los valores de esta propiedad son: <code>start</code> <code>end</code> <code>center</code> <code>stretch</code></p>
+
+                    <ul>
+                        
+                        <li><strong>start:</strong> Alinea los items al principio de la celda.</li>
+
+                        <div class="grid ej1">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+                            <div>div 4</div>
+
+                        </div>
+
+                        
+                        <li><strong>end:</strong> Alinea los items al final de la celda.</li>
+
+                        <div class="grid ej2">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+                            <div>div 4</div>
+
+                        </div>
+                        
+
+                        <li><strong>center</strong> Alinea los items a al centro de la celda.</li>
+
+                        <div class="grid ej3">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+                            <div>div 4</div>
+
+                        </div>
+
+
+                        <li><strong>stretch:</strong> Agranda el contenido a todo el ancho de la celda. Esta es la propiedad por defecto.</li>
+
+                        <div class="grid ej4">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+                            <div>div 4</div>
+
+                        </div>
+
+                    </ul>
+
+                    
+                    <h3>align-items:</h3>
+                    <p>Se usa para alinear verticalmente el conteido que hay dentro de las celdas. Siempre por defecto es "stretch".</p>
+                    <p>Los valores de esta propiedad son: <code>start</code> <code>end</code> <code>center</code> <code>stretch</code></p>
+
+                    <ul>
+                        
+
+                        <li><strong>start:</strong> Alinea los items en la parte superior de la celda.</li>
+
+                        <div class="grid ej5">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+                            <div>div 4</div>
+
+                        </div>
+
+                        
+                        <li><strong>end:</strong> Alinea los items en la parte inferior de la celda.</li>
+
+                        <div class="grid ej6">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+                            <div>div 4</div>
+
+                        </div>
+                        
+
+                        <li><strong>center</strong> Alinea los items en la parte central de la celda.</li>
+
+                        <div class="grid ej7">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+                            <div>div 4</div>
+
+                        </div>
+
+
+                        <li><strong>stretch:</strong> Agranda el contenido a todo el alto de la celda. Esta es la propiedad por defecto.</li>
+
+                        <div class="grid ej8">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+                            <div>div 4</div>
+
+                        </div>
+
+                    </ul>
+
+
+                    <h3>place-item:</h3>
+                    <p>En caso de que queramos simplificar código, existe la propiedad <code>place-item</code> donde especificamos primero el eje vertical y luego el horizontal.</p>
+
+                    <p>Ejemplo: <code>place-item: center start;</code></p>
+                    
+
+
+                </section>
+
+
+                <section id="6">
+                    <h1>4.6 Distribución dentro del contendor</h1>
+                    <p>En el caso de que el GRID no ocupe todo el ancho de la página podemos distribuirlo con las propiedades CSS JUSTIFY-CONTENT (horizontal) y ALIGN-CONTENT (vertical):
+
+
+                    <h3>justify-content:</h3>
+                    <p>Se usa para alinear verticalmente el conteido que hay dentro de las celdas. Siempre por defecto es "stretch".</p>
+                    <p>Los valores de esta propiedad son: <code>start</code> <code>end</code> <code>center</code> <code>stretch</code> <code>space-between</code> <code>space-around</code> <code>space-evenly</code></p>
+
+                    <ul>
+                        
+                        <li><strong>start</strong> Las celdas se colocan pegadas al inicio del contenedor.</li>
+
+                        <div class="grid1 ej9">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                        </div>
+                        
+
+                        <li><strong>end</strong> Las celdas se colocan pegadas al final del contenedor.</li>
+
+                        <div class="grid1 ej10">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                        </div>
+
+
+                        <li><strong>center</strong> Las celdas se colocan centradas en el contenedor.</li>
+
+                        <div class="grid1 ej11">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                        </div>
+
+
+                        <li><strong>stretch</strong> Las celdas ocuparan todo el contenedor.</li>
+
+                        <div class="grid1 ej12">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                        </div>
+
+
+                        <li><strong>space-between</strong> Las celdas se colocan centradas al contenedor con un poco de espacio entre las celdas.</li>
+
+                        <div class="grid1 ej13">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                        </div>
+
+
+                        <li><strong>space-around</strong> Las celdas se colocan centradas al contenedor con el mismo espacio en cada uno de los lados.</li>
+
+                        <div class="grid1 ej14">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                        </div>
+
+
+                        <li><strong>space-evenly</strong> Las celdas se colocan centradas al contenedor con el mismo espacio eseparador entre las celdas.</li>
+
+                        <div class="grid1 ej15">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                        </div>
+
+
+                    </ul>
+
+
+
+                    <h3>align-content:</h3>
+                    <p>Se usa para alinear horizontalmente el conteido que hay dentro de las celdas. Siempre por defecto es "stretch".</p>
+                    <p>Los valores de esta propiedad son: <code>start</code> <code>end</code> <code>center</code> <code>stretch</code> <code>space-between</code> <code>space-around</code> <code>space-evenly</code></p>
+
+                    <ul>
+                        
+                        <li><strong>start</strong> Las celdas se colocan pegadas al inicio del contenedor.</li>
+
+                        <div class="grid1 ej16">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                        </div>
+                        
+
+                        <li><strong>end</strong> Las celdas se colocan pegadas al final del contenedor.</li>
+
+                        <div class="grid1 ej17">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                        </div>
+
+
+                        <li><strong>center</strong> Las celdas se colocan centradas en el contenedor.</li>
+
+                        <div class="grid1 ej18">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                        </div>
+
+
+                        <li><strong>stretch</strong> Las celdas ocuparan todo el contenedor.</li>
+
+                        <div class="grid1 ej19">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                        </div>
+
+
+                        <li><strong>space-between</strong> Las celdas se colocan centradas al contenedor con un poco de espacio entre las celdas.</li>
+
+                        <div class="grid1 ej20">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                            <div>div 4</div>
+                            <div>div 5</div>
+                            <div>div 6</div>
+
+                        </div>
+
+
+                        <li><strong>space-around</strong> Las celdas se colocan centradas al contenedor con el mismo espacio en cada uno de los lados.</li>
+
+                        <div class="grid1 ej21">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                            <div>div 4</div>
+                            <div>div 5</div>
+                            <div>div 6</div>
+
+                        </div>
+
+
+                        <li><strong>space-evenly</strong> Las celdas se colocan centradas al contenedor con el mismo espacio eseparador entre las celdas.</li>
+
+                        <div class="grid1 ej22">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                            <div>div 4</div>
+                            <div>div 5</div>
+                            <div>div 6</div>
+
+                        </div>
+
+
+                    </ul>
+
+                    <h3>place-content:</h3>
+                    <p>En caso de que queramos simplificar código, existe la propiedad <code>place-content</code> donde especificamos primero el eje vertical y luego el horizontal.</p>
+
+                    <p>Ejemplo: <code>place-content: center start;</code></p>
+
+
+                </section>
+
+
+                <section id="7">
+                    <h1>4.7 Colocación implícita</h1>
+                    <p>La colocación implícita de los elementos GRID es lo que sucede cuando colocamos elementos grid fuera de la estructura que se ha definido en el contenedor grid o cuando no les damos posición.</p>
+
+                    <p>Las propiedades son:</p>
+
+                    <h3>grid-auto-columns:</h3>
+                    <p>Anchura que se le da a las columnas de fuera de la estructura.</p>
+
+                    <h3>grid-auto-rows:</h3>
+                    <p>Altura de las filas de fuera del grid.</p>
+
+                    <h3>grid-auto-flow:</h3>
+                    <p>si tengo elementos sin definir una colocación en el contenedor grid, esta propiedad define cómo se van a colocar esos elementos.</p>
+                    <ul>
+                        <li><strong>row:</strong> rellena las filas primero (opción por defecto).</li>
+                        <li><strong>column:</strong> rellena las columnas primero.</li>
+                        <li><strong>dense:</strong> intenta rellenar primero los huecos si tiene elementos más pequeños. Puede cambiar el orden de los elementos así que hay que tener cuidado.</li>
+                    </ul>
+
+
+                </section>
+
+
+                <section id="8">
+                    <h1>4.8 Disposición de los elementos</h1>
+                    <p>Los elementos se colocan solos pero también podemos colocarlos.<br>
+                    Para especificar el área a ocupar el elemento (hijo directo) utilizamos las siguientes propiedades:</p>
+
+                    <h3>grid-column-start:</h3>
+                    <p>La columna donde empieza ese elemento.</p>
+
+                    <h3>grid-column-end:</h3>
+                    <p>La columna donde termina ese elemento.</p>
+
+                    <h3>grid-row-start:</h3>
+                    <p>La fila donde empieza ese elemento.</p>
+
+                    <h3>grid-row-end:</h3>
+                    <p>La fila donde termina ese elemento.</p>
+
+                    <p>Podemos simplificar el código, con las siguientes propiedades:</p>
+
+                    <h3>grid-column:start/end;</h3> 
+                    <p>Indicamos la columna donde empieza y termina ese elemento.</p>  
+
+                    <h3>grid-row: start/end;</h3> 
+                    <p>Indicamos la fila donde empieza y termina ese elemento.</p>
+
+
+                </section>
+
+
+
+                
+
+                
+                
+            </article>
+
+        </div>
+
+        <div class="contenidolateral">
+            
+            <h2>Contenido</h2>
+                    
+            <ol>
+                <a href="#1"><li>Introducción a Grid</li></a>
+                <a href="#2"><li>Conceptos Grid</li></a>
+                <a href="#3"><li>Activar Grid</li></a>
+                <a href="#4"><li>Definir la estructura del Grid</li></a>
+                <a href="#5"><li>Propiedades de alineación</li></a>
+                <a href="#6"><li>Distribución dentro del contendor</li></a>
+                <a href="#7"><li>Colocación implícita</li></a>
+                <a href="#8"><li>Disposición de los elementos</li></a>
+            </ol>
+
+        </div>
+
+
+    </div>
+
+    
+    <footer>
+        <p>Web realizada por Marçal Alarcón Brugal - © 2021</p>
+    </footer>
+</body>
+</html>

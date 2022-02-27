@@ -1,0 +1,77 @@
+.ejemplo1{
+
+	width: 90%;
+	height: auto;
+	background-color: #979797;
+	padding: 20px;
+	columns: 3;
+}
+
+.ejemplo2{
+
+	width: 90%;
+	height: auto;
+	background-color: #979797;
+	padding: 20px;
+	columns: 3;
+	column-gap: 40px;
+}
+
+.ejemplo3{
+
+	width: 90%;
+	height: auto;
+	background-color: #979797;
+	padding: 20px;
+	columns: 3;
+	column-gap: 40px;
+	column-rule-style: solid;
+
+}
+
+.ejemplo4{
+
+	width: 90%;
+	height: auto;
+	background-color: #979797;
+	padding: 20px;
+	columns: 3;
+	column-gap: 40px;
+	column-rule-style: solid;
+	column-rule-width: 5px;
+
+}
+
+.ejemplo5{
+
+	width: 90%;
+	height: auto;
+	background-color: #979797;
+	padding: 20px;
+	columns: 3;
+	column-gap: 40px;
+	column-rule-style: solid;
+	column-rule-width: 5px;
+	column-rule-color: red;
+
+}
+
+.ejemplo5 h4{
+	column-span: all;
+	font-size: 20px;
+}
+
+.ejemplo6{
+
+	width: 90%;
+	height: auto;
+	background-color: #979797;
+	padding: 20px;
+	columns: 3;
+	column-gap: 40px;
+	column-rule-style: solid;
+	column-rule-width: 5px;
+	column-rule-color: red;
+	column-width: 40px;
+
+}

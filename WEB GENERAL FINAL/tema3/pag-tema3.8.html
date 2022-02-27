@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../css/principalbootstrap.css">
+
+    <link rel="icon" type="image/png" href="../img/icono.jpg">
+    <title>Tema 3 Apartado 3</title>
+  </head>
+  <body>
+    
+  <div class="container-fluid fondo">
+      <div class="row mb-5">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"> <img src="../img/iconos/home.png" alt="Logo" height="50px"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="pag-tema3.1.html">LEGISLACIÓN</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pag-tema3.2.html">IMÁGENES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pag-tema3.3.html">SOFTWARE</a>
+                  </li>  
+                  <li class="nav-item">
+                    <a class="nav-link" href="pag-tema3.4.html">ETIQUETA IMG</a>
+                  </li> 
+                  <li class="nav-item">
+                    <a class="nav-link" href="pag-tema3.5.html">ETIQUETA AUDIO</a>
+                  </li> 
+                  <li class="nav-item">
+                    <a class="nav-link" href="pag-tema3.6.html">ETIQUETA VIDEO</a>
+                  </li> 
+                  <li class="nav-item">
+                    <a class="nav-link" href="pag-tema3.7.html">ANIMACIONES</a>
+                  </li> 
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="pag-tema3.8.html">BOOTSTRAP</a>
+                  </li> 
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="pag-tema3.9.html">ETIQUETAS INTERACTIVAS</a>
+                  </li> 
+
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+      </div>
+
+      <div class="text-center cabecera">
+            <h1 class="titulotema">Implementación de contenido multimedia</h1>
+            <h2 class="tituloseccion">3.8 Bootstrap</h2>
+      </div>
+ 
+
+      </div>
+      <div class="row d-flex m-5" id="4">
+
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Bootstrap</li>
+            </ol>
+        </nav>
+
+    
+        <div class="col-md-9 col-sm-12 mb-3">
+
+            <div class="text-left contenido">
+                <article>
+                    <section id="1">
+                        <h1>8.1 ¿Qué es Bootstrap?</h1>
+                        <p>Bootstrap es un framework CSS desarrollado por Twitter en 2010, para estandarizar las herramientas de la compañía.</p>
+                        <p>El framework combina CSS y JavaScript para estilizar los elementos de una página HTML.</p>
+                        <p>Su principal objetivo es permitir la construcción de sitios web responsive para dispositivos móviles.</p>
+                        <p>Esto significa que las páginas están diseñadas para funcionar en desktop, tablets y smartphones, de una manera muy simple y organizada.</p>
+
+                    </section>
+
+                    <section id="2">
+                        <h1>8.2 Imágenes en Bootstrap 5</h1>
+                        <p>Podemos cambiar la forma de la imagen de 3 formas diferentes:</p> 
+                        <ul>
+                          <li><strong>rounded:</strong> Le coloca un borde redondo a las esquinas de la imagen.</li>  
+                          <img src="../img/tema3/sec8/paris.jpg" width="25%" class="rounded" alt="Cinque Terre">
+
+                          <li><strong>rounded-circle:</strong> Convierte la imagen en un círculo/óvalo.</li>  
+                          <img src="../img/tema3/sec8/paris.jpg" width="25%" class="rounded-circle" alt="Cinque Terre">
+
+                          <li><strong>img-thumbnail:</strong> Le coloca un marco a la imagen.</li>  
+                          <div class="ejemplo"><img src="../img/tema3/sec8/paris.jpg" width="25%" class="img-thumbnail" alt="Cinque Terre">
+                          </div>
+                        </ul>
+                        
+                    </section>
+
+
+
+                    <section id="3">
+                        <h1>8.3 Títulos en Bootstrap 5</h1>
+                        <p>A parte de los típicos títulos de HTML (de h1 a h6) en Bootstrap existen 6 tipos más de títulos (de display-1 a display-6):</p> 
+
+
+                          <h4 class="display-1">Display 1</h4>
+                          <h4 class="display-2">Display 2</h4>
+                          <h4 class="display-3">Display 3</h4>
+                          <h4 class="display-4">Display 4</h4>
+                          <h4 class="display-5">Display 5</h4>
+                          <h4 class="display-6">Display 6</h4>
+
+                          <div class="ejemplo">
+                            &#60;h1 class="display-1">Display 1&#60;/h1><br>
+                            &#60;h1 class="display-2">Display 2&#60;/h1><br>
+                            &#60;h1 class="display-3">Display 3&#60;/h1><br>
+                            &#60;h1 class="display-4">Display 4&#60;/h1><br>
+                            &#60;h1 class="display-5">Display 5&#60;/h1><br>
+                            &#60;h1 class="display-6">Display 6&#60;/h1><br>
+                          </div>
+                        
+                    </section>
+
+
+                    <section id="4">
+                        <h1>8.4 Breadcrumb en Bootstrap 5</h1>
+                        <p>Con Bootstrap existen una forma muy sencilla de crear nuestros propios Breadcrumbs:</p> 
+                        <nav aria-label="breadcrumb">
+                          <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Library</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Data</li>
+                          </ol>
+                        </nav>
+
+                        <div class="ejemplo">
+                          &#60;nav aria-label="breadcrumb"><br>
+                            &#60;ol class="breadcrumb"><br>
+                              &#60;li class="breadcrumb-item">&#60;a href="#">Home&#60;/a>&#60;/li><br>
+                              &#60;li class="breadcrumb-item">&#60;a href="#">Library&#60;/a>&#60;/li><br>
+                              &#60;li class="breadcrumb-item active" aria-current="page">Data&#60;/li><br>
+                            &#60;/ol><br>
+                          &#60;/nav><br>
+                        </div>
+
+                        <p>Si queremos personalizar el divisor, debemos de añadir el siguiente código en el nav: <code>style="--bs-breadcrumb-divider: '>';"</code></p>
+                        
+                    </section>
+
+
+                    <section id="5">
+                        <h1>8.5 Alertas en Bootstrap 5</h1>
+                        <p>Con la propiedad .alert podemos crear diferentes tipos de alertas. Podemos crear un total de 8 alertas diferentes que son:</p> 
+                        <ul>
+                          <li>alert-success</li>
+                            <div class="alert alert-success">
+                              <strong>Success!</strong> This alert box could indicate a successful or positive action.
+                            </div>
+
+                          <li>alert-info</li>
+                          <div class="alert alert-info">
+                            <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+                          </div>
+
+                          <li>alert-warning</li>
+                            <div class="alert alert-warning">
+                              <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+                            </div>
+
+                          <li>alert-danger</li>
+                            <div class="alert alert-danger">
+                              <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+                            </div>
+
+                          <li>alert-primary</li>
+                           <div class="alert alert-primary">
+                              <strong>Primary!</strong> Indicates an important action.
+                            </div>
+
+                          <li>alert-secondary</li>
+                          <div class="alert alert-secondary">
+                            <strong>Secondary!</strong> Indicates a slightly less important action.
+                          </div>
+
+                          <li>alert-dark</li>
+                            <div class="alert alert-dark">
+                              <strong>Dark!</strong> Dark grey alert.
+                            </div>
+
+                          <li>alert-light</li>
+                            <div class="alert alert-light">
+                              <strong>Light!</strong> Light grey alert.
+                            </div>
+                        </ul>
+
+                        <p>Este sería un ejemplo de código de alerta:</p>
+                        <div class="ejemplo">
+                            &#60;div class="alert alert-success"><br>
+                              &#60;strong>Success!&#60;/strong> This alert box could indicate a successful or positive action.<br>
+                            &#60;/div>
+                          
+                        </div>
+
+                    </section>
+
+
+                    <section id="6">
+                        <h1>8.6 Botones en Bootstrap 5</h1>
+                        <p>Con la propiedad .btn podemos crear diferentes tipos de botones. Podemos crear un total de 10 botones diferentes que son:</p> 
+                        <ul>
+                          <li>btn</li>
+                            <button type="button" class="btn">Basic</button>
+
+                          <li>btn-primary</li>
+                            <button type="button" class="btn btn-primary">Primary</button>
+
+                          <li>btn-secondary</li>
+                            <button type="button" class="btn btn-secondary">Secondary</button>
+
+                          <li>btn btn-success</li>
+                            <button type="button" class="btn btn-success">Success</button>
+
+                          <li>btn btn-info</li>
+                           <button type="button" class="btn btn-info">Info</button>
+
+                          <li>btn btn-warning</li>
+                          <button type="button" class="btn btn-warning">Warning</button>
+
+                          <li>btn btn-dark</li>
+                            <button type="button" class="btn btn-dark">Danger</button>
+
+                          <li>btn btn-dark</li>
+                            <button type="button" class="btn btn-dark">Dark</button>
+
+                          <li>btn-light</li>
+                            <button type="button" class="btn btn-light">Light</button>
+
+                          <li>btn-link</li>
+                            <button type="button" class="btn btn-link">Link</button>
+                        </ul>
+
+                        <p>Este sería un ejemplo de código de botón:</p>
+                        <div class="ejemplo">
+                            &#60;button type="button" class="btn btn-primary">Primary&#60;/button>
+                          
+                        </div>
+
+                    </section>
+
+                    <section id="7">
+                        <h1>8.7 Barra de progreso en Bootstrap 5</h1>
+                        <p>Con la propiedad .progress podemos crear diferentes tipos de barras de progreso. Podemos crear un total de 9 estilos diferentes que son:</p> 
+                        <ul>
+                          <li>progress-bar</li>
+                            <div class="progress">
+                              <div class="progress-bar" style="width:10%"></div>
+                            </div><br>
+
+                          <li>bg-success</li>
+                            <div class="progress">
+                              <div class="progress-bar bg-success" style="width:20%"></div>
+                            </div><br>
+
+                          <li>bg-info</li>
+                            <div class="progress">
+                              <div class="progress-bar bg-info" style="width:30%"></div>
+                            </div><br>
+
+                          <li>bg-warning</li>
+                            <div class="progress">
+                               <div class="progress-bar bg-warning" style="width:40%"></div>
+                            </div><br>
+
+                          <li>bg-danger</li>
+                            <div class="progress">
+                              <div class="progress-bar bg-danger" style="width:50%"></div>
+                            </div><br>
+
+                          <li>bg-white</li>
+                            <div class="progress border">
+                              <div class="progress-bar bg-white" style="width:60%"></div>
+                            </div><br>
+
+                          <li>bg-secondary</li>
+                            <div class="progress">
+                              <div class="progress-bar bg-secondary" style="width:70%"></div>
+                            </div><br>
+
+                          <li>bg-light</li>
+                            <div class="progress border">
+                              <div class="progress-bar bg-light" style="width:80%"></div>
+                            </div><br>
+
+                          <li>bg-dark</li>
+                            <div class="progress">
+                              <div class="progress-bar bg-dark" style="width:90%"></div>
+                            </div>
+
+                        </ul>
+
+                        <p>Este sería un ejemplo de código de una barra de progreso:</p>
+                        <div class="ejemplo">
+                            &#60;div class="progress"><br>
+                               &#60;div class="progress-bar bg-success" style="width:20%"> &#60;/div><br>
+                             &#60;/div><br>
+                          
+                        </div>
+
+                    </section>
+
+                    <section id="8">
+                        <h1>8.8 Spinners en Bootstrap 5</h1>
+                        <p>Los Spinners es una forma clara de indicar al usuario que un contenido se está cargando. A través de Bootstrap podemos crear un total de 9 estilos diferentes que son:</p> 
+                        <ul>
+                          <li>text-muted</li>
+                            <div class="spinner-border text-muted"></div>
+
+                          <li>text-primary</li>
+                            <div class="spinner-border text-primary"></div>
+
+                          <li>text-success</li>
+                            <div class="spinner-border text-success"></div>
+
+                          <li>text-info</li>
+                            <div class="spinner-border text-info"></div>
+
+                          <li>text-warning</li>
+                            <div class="spinner-border text-warning"></div>
+
+                          <li>text-danger</li>
+                            <div class="spinner-border text-danger"></div>
+
+                          <li>text-secondary</li>
+                            <div class="spinner-border text-secondary"></div>
+
+                          <li>text-dark</li>
+                            <div class="spinner-border text-dark"></div>
+
+                          <li>text-light</li>
+                            <div class="ejemplo">
+                              <div class="spinner-border text-light"></div>
+                            </div> 
+
+                        </ul>
+
+                        <p>Este sería un ejemplo de código de Spinner:</p>
+                        <div class="ejemplo">
+                            &#60;div class="spinner-border text-primary">&#60;/div>
+                          
+                        </div>
+
+                    </section>
+
+
+                    <section id="9">
+                        <h1>8.9 Paginación en Bootstrap 5</h1>
+                        <p>Si tu sitio tiene muchos artículos, es recomendable hacer un sistema de paginación. Esto Bootstrap nos lo facilita muchísimo con la siguiente plantilla:</p> 
+                        <ul class="pagination">
+                          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+
+                        <div class="ejemplo">
+                          &#60;ul class="pagination"><br>
+                          &#60;li class="page-item">&#60;a class="page-link" href="#">Previous&#60;/a><&#60;/li><br>
+                          &#60;li class="page-item">&#60;a class="page-link" href="#">1&#60;/a>&#60;/li><br>
+                          &#60;li class="page-item">&#60;a class="page-link" href="#">2&#60;/a>&#60;/li><br>
+                          &#60;li class="page-item">&#60;a class="page-link" href="#">3&#60;/a>&#60;/li><br>
+                          &#60;li class="page-item">&#60;a class="page-link" href="#">Next&#60;/a>&#60;/li><br>
+                          &#60;/ul>
+                        </div>
+
+                        <p>Si queremos marcar la página actual, debemos de usar la clase active:</p>
+                        <div class="ejemplo">
+                          &#60;li class="page-item active">&#60;a class="page-link" href="#">2&#60;/a>&#60;/li>
+                        </div>
+
+                        <p>En cambio, si queremos dehabilitar el botón de una página, debemos de usar la clase de disabled:</p>
+                        <div class="ejemplo">
+                          &#60;li class="page-item disabled">&#60;a class="page-link" href="#">Previous&#60;/a>&#60;/li>
+                        </div>
+                        
+                    </section>
+
+
+                    <section id="10">
+                        <h1>8.10 Tarjetas en Bootstrap 5</h1>
+                        <p>A la hora de mostrar una lista de posts, podemos usar las tarjetas de Bootstrap, una simple plantilla que nos ofrece una imagen, texto y botón.</p>
+
+                        <div class="card" style="width: 18rem;">
+                          <img src="../img/tema3/sec8/paris.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+
+                        <div class="ejemplo">
+                          &#60;div class="card" style="width: 18rem;"><br>
+                          &#60;img src="..." class="card-img-top" alt="..."><br>
+                          &#60;div class="card-body"><br>
+                          &#60;h5 class="card-title">Card title&#60;/h5><br>
+                          &#60;p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.&#60;/p><br>
+                          &#60;a href="#" class="btn btn-primary">Go somewhere&#60;/a><br>
+                          &#60;/div>
+                        </div>
+                        
+                    </section>
+
+
+                    <section id="11">
+                        <h1>8.11 Acordeón en Bootstrap 5</h1>
+                        <p>Otra forma interesante de mostrar contenido es mostrandolo/ocultandolo, para ello lo ideal son las acordenoes. En Bootstrap existe un código para crear una acordeón automaticamente.</p>
+
+                        <div id="accordion">
+                          <div class="card">
+                            <div class="card-header">
+                              <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                                Collapsible Group Item #1
+                              </a>
+                            </div>
+                            <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                              <div class="card-body">
+                                Lorem ipsum..
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="card">
+                            <div class="card-header">
+                              <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+                                Collapsible Group Item #2
+                              </a>
+                            </div>
+                            <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                              <div class="card-body">
+                                Lorem ipsum..
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="card">
+                            <div class="card-header">
+                              <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                                Collapsible Group Item #3
+                              </a>
+                            </div>
+                            <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                              <div class="card-body">
+                                Lorem ipsum..
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="ejemplo">
+                          &#60;div id="accordion"><br>
+                          &#60;div class="card"><br>
+                            &#60;div class="card-header"><br>
+                              &#60;a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                                Collapsible Group Item #1
+                              &#60;/a><br>
+                            &#60;/div><br>
+                            &#60;div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                              &#60;div class="card-body">
+                                Lorem ipsum..
+                              &#60;/div><br>
+                            &#60;/div><br>
+                          &#60;/div><br>
+
+                          &#60;div class="card"><br>
+                            &#60;div class="card-header"><br>
+                              &#60;a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+                                Collapsible Group Item #2
+                              &#60;/a><br>
+                            &#60;/div><br>
+                            &#60;div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                              &#60;div class="card-body">
+                                Lorem ipsum..
+                              &#60;/div><br>
+                            &#60;/div><br>
+                          &#60;/div><br>
+
+                          &#60;div class="card"><br>
+                            &#60;div class="card-header"><br>
+                              &#60;a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                                Collapsible Group Item #3
+                              &#60;/a><br>
+                            &#60;/div><br>
+                            &#60;div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                              &#60;div class="card-body">
+                                Lorem ipsum..
+                              &#60;/div><br>
+                            &#60;/div><br>
+                          &#60;/div><br>
+
+                          &#60;/div><br>
+                        </div>
+
+                        <p>Para que funcione la acordeón, hay que importar también la librería de JS de Bootstrap.</p>
+                        
+                    </section>
+
+
+                    <section id="12">
+                        <h1>8.12 Otros elementos de Bootstrap</h1>
+                        <p>A parte de todos los elementos que acabamos de ver, existe un sinfín más de elementos. Aquí te dejo la documentación de Bootstrap para que puedas ver todos los elementos que soporta.</p>
+                        <a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/" target="_blank"><p>Documentación oficial de Bootstrap</p></a>
+                        
+                    </section>
+
+
+                    <section id="13">
+                        <h1>8.13 Iconos de Bootstrap</h1>
+                        <p>Bootstrap también tiene una librería dedicada a los iconos, simplemente la importamos y podemos usar una infinidad de iconos para nuestra web.</p>
+                        <i class="bi bi-alarm-fill"></i><i class="bi bi-backspace"></i><i class="bi bi-apple"></i><i class="bi bi-basket"></i><br>
+
+                        <a href="https://icons.getbootstrap.com/" target="_blank"><p>Lista de iconos disponibles</p></a>
+
+                        <img src="../img/tema3/sec8/listaiconos.png" width="80%">
+
+                        <p>Para mostrar el contenido en nuestra web, debemos de escribir el siguiente código:</p>
+                        <div class="ejemplo">&#60;i class="bi bi-alarm-fill">&#60;/i></div>
+                        
+                    </section>
+                    
+                    
+                </article>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-12">
+          <div class="lateral">
+            <h2>Contenido</h2>
+              <ol class="list-group list-group-numbered">
+                  <a href="#1"><li class="list-group-item">8.1 ¿Qué es Bootstrap?</li></a>
+                  <a href="#2"><li class="list-group-item">8.2 Imágenes en Bootstrap 5</li></a>
+                  <a href="#3"><li class="list-group-item">8.3 Títulos en Bootstrap 5</li></a>
+                  <a href="#4"><li class="list-group-item">8.4 Breadcrumb en Bootstrap 5</li></a>
+                  <a href="#5"><li class="list-group-item">8.5 Alertas en Bootstrap 5</li></a>
+                  <a href="#6"><li class="list-group-item">8.6 Botones en Bootstrap 5</li></a>
+                  <a href="#7"><li class="list-group-item">8.7 Barra de progreso en Bootstrap 5</li></a>
+                  <a href="#8"><li class="list-group-item">8.8 Spinners en Bootstrap 5</li></a>
+                  <a href="#9"><li class="list-group-item">8.9 Paginación en Bootstrap 5</li></a>
+                  <a href="#10"><li class="list-group-item">8.10 Tarjetas en Bootstrap 5</li></a>
+                  <a href="#11"><li class="list-group-item">8.11 Acordeón en Bootstrap 5</li></a>
+                  <a href="#12"><li class="list-group-item">8.12 Otros elementos de Bootstrap</li></a>
+                  <a href="#13"><li class="list-group-item">8.13 Iconos de Bootstrap</li></a>
+              </ol>
+          </div>
+          
+          
+          
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-12 footer">
+          <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          <img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
+        </a><br />Este obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">licencia de Creative Commons Reconocimiento 4.0 Internacional</a>.<br>
+       <hr> 
+        <p>Web realizada por Marçal Alarcón Brugal</p>
+        </div>
+
+
+      </div>
+
+      
+        </div>
+       
+    </div>
+
+  </body>
+</html>

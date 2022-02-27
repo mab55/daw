@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/principal.css">
+    <link rel="stylesheet" href="../css/cssflexbox.css">
+    <link rel="stylesheet" href="../css/ejemplos.css">
+
+    <link rel="icon" type="image/png" href="../img/icono.jpg">
+    <title>USO DE ESTILOS - TEMA 2 APARTADO 2</title>
+</head>
+<body>
+    <header class="cabezera">
+        <iframe src="../menu.html" style="width: 100%; height: 120px; border: 0px;" target="_parent"></iframe>
+    </header>
+    <div class="divcabecera">
+        
+
+        <div class="cajatitulo">
+                <h1 class="titulotema">Uso de estilos</h1>
+                <h2 class="tituloseccion">2.2 Pseudo-clases</h2>
+        </div>
+
+    </div>
+
+
+    <div class="contenido">
+        
+        <div class="contenidoprincipal">
+            
+            <article>
+
+
+                <section id="1">
+                    <h1>2.1 ¿Qué son las pseudo-clases?</h1>
+                    <p>Las pseudoclases se definen añadiendo dos puntos antes de la pseudoclase concreta. En el caso de existir selectores de etiqueta, id o clases, estas siempre se escribirán a su izquierda.</p>
+
+                    <center>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/V1gAU2Ef9mE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </center><br>
+
+
+                </section>
+
+
+                <section id="2">
+                    <h1>2.2 Ejemplos de Pseudo-clases</h1>
+                    <p>Existen un sinfín de pseudoclases, a continuación te enseñaré algunos ejemplos:</p>
+
+                    <h3>:link</h3>
+                    <p>Con esta pseudo-clase, le aplicamos estilo a un link que aun no hemos visitado. En el siguiente ejemplo, si aún no has visitado la web de mab55.com, el enlace te debe de aparecer de color rojo.</p>
+                    
+                    <div class="divejemplo">
+                        
+                        <div class="ejemplonavegador">
+                            <div class="circulos c1"></div>
+                            <div class="circulos c2"></div>
+                            <div class="circulos c3"></div>
+
+                            <style type="text/css">
+                                #ej1:link{
+                                    color:red;
+                                }
+                            </style>
+                            
+                            <div class="contenidos">
+                                <!-- Aquí dentro va el ejemplo (divs) -->
+                                <a target="_parent" href="https://mab55.com/es/" id="ej1">Enlace a la web de Mab55</a>
+
+                                <!-- Termina el ejemplo -->
+                            </div>
+                        </div>
+
+                        <div class="ejemplocodigo">
+                           <div class="contenidos ccodigo">
+                               <div class="codigo">
+                                    <!-- Aquí dentro va el ejemplo (código) -->
+                                   
+                                    <p>a:link{<br>color: red;<br>}</p>
+
+                                    <!-- Termina el ejemplo -->
+                                </div>
+                           </div> 
+                        </div>
+                    </div>
+
+
+                    <h3>:visited</h3>
+                    <p>Con esta pseudo-clase, le aplicamos estilo a un link que aun ya hemos visitado. Con este ejemplo, si ya has visitado almenos una vez la web de mab55.com, te debe de aparecer el enlace de color rojo.</p>
+
+                    <div class="divejemplo">
+                        
+                        <div class="ejemplonavegador">
+                            <div class="circulos c1"></div>
+                            <div class="circulos c2"></div>
+                            <div class="circulos c3"></div>
+
+                            <style type="text/css">
+                                #ej2:visited{
+                                    color:red;
+                                }
+                            </style>
+                            
+                            <div class="contenidos">
+                                <!-- Aquí dentro va el ejemplo (divs) -->
+                                <a target="_parent" href="https://mab55.com/es/" id="ej2">Enlace a la web de Mab55</a>
+
+                                <!-- Termina el ejemplo -->
+                            </div>
+                        </div>
+
+                        <div class="ejemplocodigo">
+                           <div class="contenidos ccodigo">
+                               <div class="codigo">
+                                    <!-- Aquí dentro va el ejemplo (código) -->
+                                   
+                                    <p>a:visited{<br>color: red;<br>}</p>
+
+                                    <!-- Termina el ejemplo -->
+                                </div>
+                           </div> 
+                        </div>
+                    </div>
+
+
+                    <h3>:active</h3>
+                    <p>Con esta pseudo-clase, le aplicamos estilo cuando el usuario esté activando el elemento (pulsando el ememento). Generalmente este tipo de pseudo-clase, se usa para los enlaces y botones. Con este ejemplo, si estás pulsando el enlace, te debe de aparecer el enlace de color rojo.</p>
+
+                    <div class="divejemplo">
+                        
+                        <div class="ejemplonavegador">
+                            <div class="circulos c1"></div>
+                            <div class="circulos c2"></div>
+                            <div class="circulos c3"></div>
+
+                            <style type="text/css">
+                                #ej3:active{
+                                    color:red;
+                                }
+                            </style>
+                            
+                            <div class="contenidos">
+                                <!-- Aquí dentro va el ejemplo (divs) -->
+                                <a target="_parent" href="https://mab55.com/es/" id="ej3">Enlace a la web de Mab55</a>
+
+                                <!-- Termina el ejemplo -->
+                            </div>
+                        </div>
+
+                        <div class="ejemplocodigo">
+                           <div class="contenidos ccodigo">
+                               <div class="codigo">
+                                    <!-- Aquí dentro va el ejemplo (código) -->
+                                   
+                                    <p>a:active{<br>color: red;<br>}</p>
+
+                                    <!-- Termina el ejemplo -->
+                                </div>
+                           </div> 
+                        </div>
+                    </div>
+
+
+                    <h3>:hover</h3>
+                    <p>Con esta pseudo-clase, le aplicamos estilo cuando el usuario pasa el ratón por encima. Generalmente este tipo de pseudo-clase, se usa para los enlaces y botones. Con este ejemplo, si pasas el ratón por encima del enlace, te debe de aparecer el enlace de color rojo.</p>
+
+                    <div class="divejemplo">
+                        
+                        <div class="ejemplonavegador">
+                            <div class="circulos c1"></div>
+                            <div class="circulos c2"></div>
+                            <div class="circulos c3"></div>
+
+                            <style type="text/css">
+                                #ej4:hover{
+                                    color:red;
+                                }
+                            </style>
+                            
+                            <div class="contenidos">
+                                <!-- Aquí dentro va el ejemplo (divs) -->
+                                <a target="_parent" href="https://mab55.com/es/" id="ej4">Enlace a la web de Mab55</a>
+
+                                <!-- Termina el ejemplo -->
+                            </div>
+                        </div>
+
+                        <div class="ejemplocodigo">
+                           <div class="contenidos ccodigo">
+                               <div class="codigo">
+                                    <!-- Aquí dentro va el ejemplo (código) -->
+                                   
+                                    <p>a:hover{<br>color: red;<br>}</p>
+
+                                    <!-- Termina el ejemplo -->
+                                </div>
+                           </div> 
+                        </div>
+                    </div>
+
+
+                    <h3>:focus</h3>
+                    <p>Con esta pseudo-clase, le aplicamos estilo cuando el usuario pone el foco sobre un elemento. Con este ejemplo, al pasar el foco sobre el enlace, se pone de color rojo.</p>
+
+                    <div class="divejemplo">
+                        
+                        <div class="ejemplonavegador">
+                            <div class="circulos c1"></div>
+                            <div class="circulos c2"></div>
+                            <div class="circulos c3"></div>
+
+                            <style type="text/css">
+                                #ej5:focus{
+                                    color:red;
+                                }
+                            </style>
+                            
+                            <div class="contenidos">
+                                <!-- Aquí dentro va el ejemplo (divs) -->
+                                <a target="_parent" href="https://mab55.com/es/" id="ej5">Enlace a la web de Mab55</a>
+
+                                <!-- Termina el ejemplo -->
+                            </div>
+                        </div>
+
+                        <div class="ejemplocodigo">
+                           <div class="contenidos ccodigo">
+                               <div class="codigo">
+                                    <!-- Aquí dentro va el ejemplo (código) -->
+                                   
+                                    <p>a:focus{<br>color: red;<br>}</p>
+
+                                    <!-- Termina el ejemplo -->
+                                </div>
+                           </div> 
+                        </div>
+                    </div>
+                    
+
+                    <h3>:enabled</h3>
+                    <p>Con esta pseudo-clase, le aplicamos estilo a un link que aun no hemos visitado. En el siguiente ejemplo, si aún no has visitado la web de mab55.com, el enlace te debe de aparecer de color rojo.</p>
+                    
+                    <div class="divejemplo">
+                        
+                        <div class="ejemplonavegador">
+                            <div class="circulos c1"></div>
+                            <div class="circulos c2"></div>
+                            <div class="circulos c3"></div>
+
+                            <style type="text/css">
+                                #ej1:link{
+                                    color:red;
+                                }
+                            </style>
+                            
+                            <div class="contenidos">
+                                <!-- Aquí dentro va el ejemplo (divs) -->
+                                <a target="_parent" href="https://mab55.com/es/" id="ej1">Enlace a la web de Mab55</a>
+
+                                <!-- Termina el ejemplo -->
+                            </div>
+                        </div>
+
+                        <div class="ejemplocodigo">
+                           <div class="contenidos ccodigo">
+                               <div class="codigo">
+                                    <!-- Aquí dentro va el ejemplo (código) -->
+                                   
+                                    <p>a:link{<br>color: red;<br>}</p>
+
+                                    <!-- Termina el ejemplo -->
+                                </div>
+                           </div> 
+                        </div>
+                    </div>
+
+
+
+                    <h3>:disabled</h3>
+                    <p>Con esta pseudo-clase, le aplicamos estilo a los elementos de un formulario que no estén activados. En el siguiente ejemplo, el campo del apellido aparece con el texto rojo porque está desactivado.</p>
+                    
+                    <div class="divejemplo">
+                        
+                        <div class="ejemplonavegador">
+                            <div class="circulos c1"></div>
+                            <div class="circulos c2"></div>
+                            <div class="circulos c3"></div>
+
+                            <style type="text/css">
+                                #ej1:link{
+                                    color:red;
+                                }
+                            </style>
+                            
+                            <div class="contenidos">
+                                <!-- Aquí dentro va el ejemplo (divs) -->
+                                <a target="_parent" href="https://mab55.com/es/" id="ej1">Enlace a la web de Mab55</a>
+
+                                <!-- Termina el ejemplo -->
+                            </div>
+                        </div>
+
+                        <div class="ejemplocodigo">
+                           <div class="contenidos ccodigo">
+                               <div class="codigo">
+                                    <!-- Aquí dentro va el ejemplo (código) -->
+                                   
+                                    <p>a:link{<br>color: red;<br>}</p>
+
+                                    <!-- Termina el ejemplo -->
+                                </div>
+                           </div> 
+                        </div>
+                    </div>
+
+                </section>
+
+                
+            </article>
+
+        </div>
+
+        <div class="contenidolateral">
+            
+            <h2>Contenido</h2>
+                    
+            <ol>
+                <a href="#1"><li>¿Qué son las pseudo-clases?</li></a>
+                <a href="#2"><li>Ejemplos de Pseudo-clases</li></a>
+                
+            </ol>
+
+        </div>
+
+
+    </div>
+
+    
+    <footer>
+        <p>Web realizada por Marçal Alarcón Brugal - © 2021</p>
+    </footer>
+</body>
+</html>

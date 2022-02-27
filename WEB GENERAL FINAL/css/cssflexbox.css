@@ -1,0 +1,175 @@
+div.divcabecera{
+
+	width: 100%;
+	height: auto;
+	background-color: #A9A9A9;
+
+}
+
+
+div.cajatitulo{
+
+	padding: 100px;
+	padding-top: 120px;
+	text-align: center;
+	font-family: 'Bebas Neue';
+	letter-spacing: 5px;
+
+}
+
+
+h1.titulotema{
+	font-size: 75px;
+	color: #EFEFEF;
+}
+
+h2.tituloseccion{
+	font-size: 55px;
+	color: #EFEFEF;
+	letter-spacing: 3px;
+}
+
+
+div.contenido{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
+
+}
+
+/*ESTILOS CONTENIDO CENTRAL (main)*/
+div.contenidoprincipal{
+    width: 70%;
+    background-color: white;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    padding: 20px;
+
+}
+
+.contenidoprincipal p{
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: justify;
+}
+
+.contenidoprincipal h1{
+
+    font-family: 'Bebas Neue';
+    background-color: #EFEFEF;
+    padding: 10px;
+    font-size: 30px;
+    margin: 0px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.contenidoprincipal h2{
+
+    font-family: 'Bebas Neue';
+    background-color: #EFEFEF;
+    padding: 10px;
+    font-size: 20px;
+    margin: 10px;
+    margin-bottom: 0px;
+    display: inline-block;
+    letter-spacing: 1.2px;
+    margin-top: 20px;
+
+}
+
+.contenidoprincipal h3{
+
+    font-family: 'Bebas Neue';
+    background-color: #F9F9F9;
+    padding: 10px;
+    font-size: 17px;
+    margin: 10px;
+    margin-bottom: 0px;
+    display: inline-block;
+    letter-spacing: 1px;
+    margin-top: 20px;
+
+}
+
+.contenidoprincipal h2{
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+    margin: 0px;
+    letter-spacing: 1px;
+
+}
+
+.contenidoprincipal li{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin: 0px;
+    margin-bottom: 10px;
+
+}
+
+.contenidoprincipal li{
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    text-align: justify;
+
+}
+
+.contenidoprincipal span{
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+code{
+
+    background-color: #EEEEEE;
+    color: black;
+    padding: 1px;
+}
+
+section{
+
+    margin-bottom: 50px;
+}
+
+
+/*ESTILOS CONTENIDO LATERAL (ASIDE)*/
+div.contenidolateral{
+    width: 25%;
+    background-color: white;
+    margin-right: 2.5%;
+    align-self: baseline;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+div.contenidolateral h2{
+
+    font-family: 'Bebas Neue';
+    background-color: #EFEFEF;
+    padding: 10px;
+    font-size: 20px;
+    letter-spacing: 1.4px;
+}
+
+div.contenidolateral li{
+
+    font-family: 'Roboto', sans-serif;
+    margin-top: 15px;
+}
+

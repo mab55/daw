@@ -56,7 +56,7 @@ div.menutemas{
 div.temas{
 
 	width: 30%;
-	height: 600px;
+	height: 650px;
 	background-color: white;
 	position: relative;
 	float: left;
@@ -72,4 +72,11 @@ margin:auto;
 width: 90px;
 margin-bottom: 20px;
 margin-top: 20px;
+}
+
+footer{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
 }

@@ -1,0 +1,418 @@
+div.flexbox{
+
+	width: 90%;
+	display: flex;
+	background-color: darkblue;
+	color: white;
+
+}
+
+div.flexbox div{
+
+	width: 100px;
+	background-color: gray;
+	margin: 10px;
+}
+
+
+div.ej1{
+
+	flex-direction: row;
+	height: 50px;
+}
+
+div.ej2{
+
+	flex-direction: row-reverse;
+	height: 50px;
+}
+
+div.ej3{
+
+	flex-direction: column;
+	
+}
+
+div.ej4{
+
+	flex-direction: column-reverse;
+
+}
+
+div.ej5{
+
+	flex-wrap: nowrap;
+
+}
+
+div.ej5 div{
+
+	width: 100%;
+}
+
+div.ej6{
+
+	flex-wrap: wrap;
+
+}
+
+div.ej6 div{
+
+	width: 100%;
+}
+
+div.ej7{
+
+	flex-wrap: wrap-reverse;
+
+}
+
+div.ej7 div{
+
+	width: 100%;
+}
+
+div.ej8{
+
+	flex-wrap: wrap-reverse;
+
+}
+
+div.ej8 div{
+
+	width: 100%;
+}
+
+div.ej9{
+
+	justify-content: flex-start;
+
+}
+
+div.ej10{
+
+	justify-content: flex-end;
+
+}
+
+div.ej11{
+
+	justify-content: center;
+
+}
+
+div.ej12{
+
+	justify-content: space-between;
+
+}
+
+div.ej13{
+
+	justify-content: space-around;
+
+}
+
+div.ej14{
+
+	justify-content: space-evenly;
+
+}
+
+div.ej15{
+
+	align-items: flex-start;
+	height: 100px;
+
+}
+
+div.ej15 div:nth-child(2){
+
+	height: 50px;	
+
+}
+
+div.ej15 div:nth-child(3){
+
+	height: 30px;	
+
+}
+
+div.ej16{
+
+	align-items: flex-end;
+	height: 100px;
+
+}
+
+div.ej16 div:nth-child(2){
+
+	height: 50px;	
+
+}
+
+div.ej16 div:nth-child(3){
+
+	height: 30px;	
+
+}
+
+
+div.ej17{
+
+	align-items: center;
+	height: 100px;
+
+}
+
+div.ej17 div:nth-child(2){
+
+	height: 50px;	
+
+}
+
+div.ej17 div:nth-child(3){
+
+	height: 30px;	
+
+}
+
+
+div.ej18{
+
+	align-items: stretch;
+	height: 100px;
+
+}
+
+
+div.ej19{
+
+	align-items: baseline;
+	height: 100px;
+
+}
+
+div.ej19 div:nth-child(2){
+
+	height: 50px;	
+
+}
+
+div.ej19 div:nth-child(3){
+
+	height: 30px;	
+
+}
+
+
+div.ej20{
+
+	align-content: flex-start;
+	flex-wrap: wrap;
+	height: 180px;
+
+}
+
+div.ej20 div{
+
+	width: 30%;
+	height: 50px;
+}
+
+
+div.ej21{
+
+	align-content: flex-end;
+	flex-wrap: wrap;
+	height: 180px;
+
+}
+
+div.ej21 div{
+
+	width: 30%;
+	height: 50px;
+}
+
+
+div.ej22{
+
+	align-content: center;
+	flex-wrap: wrap;
+	height: 180px;
+
+}
+
+div.ej22 div{
+
+	width: 30%;
+	height: 50px;
+}
+
+
+div.ej23{
+
+	align-content: stretch;
+	flex-wrap: wrap;
+	height: 180px;
+
+}
+
+div.ej23 div{
+
+	width: 30%;
+}
+
+
+div.ej24{
+
+	align-content: space-between;
+	flex-wrap: wrap;
+	height: 180px;
+
+}
+
+div.ej24 div{
+
+	width: 30%;
+	height: 50px;
+}
+
+
+div.ej25{
+
+	align-content: space-around;
+	flex-wrap: wrap;
+	height: 180px;
+
+}
+
+div.ej25 div{
+
+	width: 30%;
+	height: 50px;
+}
+
+
+div.ej26{
+
+	height: 100px;
+
+}
+
+div.ej26 div:nth-child(2){
+
+	align-self: flex-start;
+
+}
+
+
+div.ej27{
+
+	height: 100px;
+
+}
+
+div.ej27 div:nth-child(2){
+
+	align-self: flex-end;
+
+}
+
+
+div.ej28{
+
+	height: 100px;
+
+}
+
+div.ej28 div:nth-child(2){
+
+	align-self: center;
+
+}
+
+
+div.ej29{
+
+	height: 100px;
+
+}
+
+div.ej29 div:nth-child(2){
+
+	align-self: stretch;
+
+}
+
+div.ej30{
+
+	height: 100px;
+
+}
+
+div.ej30 div:nth-child(2){
+
+	align-self: baseline;
+
+}
+
+div.ej30 div:nth-child(3){
+
+	align-self: baseline;
+
+}
+
+
+div.ej31{
+
+	height: 100px;
+
+}
+
+div.ej31 div:nth-child(2){
+
+	flex-grow: 2;
+
+}
+
+
+div.ej32{
+
+	height: 100px;
+
+}
+
+
+div.ej32 div:nth-child(2){
+
+	flex-shrink: 3;
+
+}
+
+
+div.ej33{
+
+	height: 100px;
+
+}
+
+div.ej33 div:nth-child(2){
+
+	flex-basis: 50%;
+
+}
+
+
+div.ej34{
+
+	height: 100px;
+
+}
+
+div.ej34 div:nth-child(2){
+
+	order: 5;
+
+}

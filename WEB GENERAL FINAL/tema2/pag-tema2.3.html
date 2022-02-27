@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/principal.css">
+    <link rel="stylesheet" href="../css/cssflexbox.css">
+    <link rel="stylesheet" href="../css/ejemplosflexbox.css">
+
+    <link rel="icon" type="image/png" href="../img/icono.jpg">
+    <title>USO DE ESTILOS - TEMA 2 APARTADO 3</title>
+</head>
+<body>
+    <header class="cabezera">
+        <iframe src="../menu.html" style="width: 100%; height: 120px; border: 0px;" target="_parent"></iframe>
+    </header>
+    <div class="divcabecera">
+        
+
+        <div class="cajatitulo">
+                <h1 class="titulotema">Uso de estilos</h1>
+                <h2 class="tituloseccion">2.3 FlexBox</h2>
+        </div>
+
+    </div>
+
+
+    <div class="contenido">
+        
+        <div class="contenidoprincipal">
+            
+            <article>
+                <section id="1">
+                    <h1>3.1 Introducción a FlexBox</h1>
+                    <p>FLEX y GRID son dos nuevos valores (HTML5) que vamos a poder dar a la propiedad CSS display y que nos van a permitir, junto con otras propiedades, maquetar nuestras páginas web de una manera más fácil a la que se usaba tradicionalmente.</p>
+
+
+                </section>
+
+
+                <section id="2">
+                    <h1>3.2 Conceptos FlexBox</h1>
+                    <p>Para empezar a utilizar flexbox lo primero que debemos hacer es conocer algunos de los elementos básicos de este nuevo esquema, que son los siguientes:</p>
+                    <img style="width: 50%" src="..\img\tema2\sec3\flex.png"><br>
+
+
+                    <h3>Contenedor</h3>
+                    <p>Es el elemento padre que tendrá en su interior cada uno de los ítems flexibles. Observa que al contrario que muchas otras estructuras CSS, por norma general, en Flex establecemos las propiedades al elemento padre. El contenedor está formado por:</p>
+
+                    <ul>
+                        
+                        <li><strong>Eje principal:</strong> Los contenedores flexibles tendrán una orientación principal específica. Por defecto, es en horizontal (en fila).</li>
+
+                        <li><strong>Eje secundario:</strong> De la misma forma, los contenedores flexibles tendrán una orientación secundaria, perpendicular a la principal. Si la principal es en horizontal, la secundaria será en vertical, y viceversa.</li>
+
+                    </ul>
+                    
+                    <h3>Ítem:</h3>
+                    <p>Cada uno de los hijos flexibles que tendrá el contenedor en su interior.</p>
+
+                </section>
+
+
+                <section id="3">
+                    <h1>3.3 Activar FlexBox</h1>
+                    <p>Lo primero que hay que hacer es darle un valor a la propiedad DISPLAY del contenedor. Existen dos valores posibles:</p>
+
+
+                    <h3>Display: flex</h3>
+                    <p> Permite que el contenedor sea de bloque. Similar a block, ocupa todo el ancho del padre.</p>
+
+                    
+                    <h3>Display: inline-flex</h3>
+                    <p>Permite que el contenedor sea de línea. Similar a inline-block, ocupa solo el contenido.</p>
+
+
+                </section>
+
+
+                <section id="4">
+                    <h1>3.4 Dirección de los ejes</h1>
+                    <p>Existen dos propiedades principales para manipular la dirección y comportamiento de los ítems a lo largo del eje principal del contenedor. Son las siguientes:</p>
+
+
+                    <h3>flex-direction</h3>
+                    <p>Mediante la propiedad flex-direction podemos modificar la dirección del eje principal del contenedor.</p>
+
+                    <ul>
+                        
+                        <li><strong>row:</strong> Establece la dirección del eje principal en horizontal.</li>
+
+                        <div class="flexbox ej1">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                        </div>
+
+                        <li><strong>row-reverse:</strong> Establece la dirección del eje principal en horizontal (invertido).</li>
+
+                        <div class="flexbox ej2">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                        </div>
+
+                        <li><strong>column:</strong> Establece la dirección del eje principal en vertical.</li>
+
+                        <div class="flexbox ej3">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                        </div>
+
+                        <li><strong>column-reverse:</strong> Establece la dirección del eje principal en vertical (invertido).</li>
+
+                        <div class="flexbox ej4">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                        </div>
+
+                    </ul>
+
+                    
+                    <h3>flex-wrap</h3>
+                    <p>Con flex-wrap podemos especificar el comportamiento del contenedor respecto a evitar que se desborde.</p>
+
+                    <ul>
+                        
+                        <li><strong>nowrap:</strong> Establece los ítems en una sola línea (no permite que se desborde el contenedor).</li>
+
+                        <div class="flexbox ej5">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                        </div>
+
+                        <li><strong>wrap:</strong> Establece los ítems en modo multilínea (permite que se desborde el contenedor).</li>
+
+                        <div class="flexbox ej6">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                        </div>
+
+
+                        <li><strong>wrap-reverse:</strong> Establece los ítems en modo multilínea, pero en dirección inversa.</li>
+
+                        <div class="flexbox ej7">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                        </div>
+
+                    </ul>
+
+
+                    <h3>Atajo: Dirección de los ejes</h3>
+                    <p>Recuerda que existe una propiedad de atajo (short-hand) llamada flex-flow, con la que podemos resumir los valores de las propiedades flex-direction y flex-wrap, especificandose en una sola propiedad y ahorrándonos utilizar las propiedades concretas:</p>
+
+                    <ul>
+                        
+                        <li><strong>flex-direction y flex-wrap:</strong> Establecemos ambas propiedades en una sola línea.</li>
+
+                        <div class="flexbox ej8">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                        </div>
+
+                    </ul>
+
+                </section>
+
+
+                <section id="5">
+                    <h1>3.5 Propiedades de alineación</h1>
+                    <p>Para la alineación, existen 4 propiedades clave que son:</p>
+
+
+                    <h3>Justify-content:</h3>
+                    <p>Se utiliza para alinear los ítems del eje principal (por defecto, el horizontal).</p>
+                    <p>Los valores de esta propiedad son: <code>flex-start</code> <code>flex-end</code> <code>center</code> <code>space-between</code> <code>space-around</code> <code>space-evenly</code></p>
+
+                    <ul>
+                        
+                        <li><strong>flex-start</strong> Alinea los items a la izquierda del contendor principal.</li>
+
+                        <div class="flexbox ej9">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                        </div>
+
+                        
+                        <li><strong>flex-end</strong> Alinea los items a la derecha del contendor principal.</li>
+
+                        <div class="flexbox ej10">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                        </div>
+                        
+
+                        <li><strong>center</strong> Alinea los items a al centro del contenedor principal.</li>
+
+                        <div class="flexbox ej11">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                        </div>
+
+
+                        <li><strong>space-between</strong> Centra los elementos en el ancho del contenedor.</li>
+
+                        <div class="flexbox ej12">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                        </div>
+
+
+                        <li><strong>space-arround</strong> Centra los elementos en el ancho del contenedor aplicando el mismo margen en ambos lados.</li>
+
+                        <div class="flexbox ej13">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                        </div>
+
+
+                        <li><strong>space-evently</strong> Centra los elementos en el ancho del contenedor aplicando el mismo espacio en ambos lados.</li>
+
+                        <div class="flexbox ej14">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                        </div>
+
+                    </ul>
+
+                    
+                    <h3>align-items:</h3>
+                    <p>Usado para alinear los ítems del eje secundario (por defecto el vertical).</p>
+                    <p>Los valores de esta propiedad son: <code>flex-start</code> <code>flex-end</code> <code>center</code> <code>stretch</code> <code>baseline</code></p>
+
+                    <ul>
+                        
+                        <li><strong>flex-start</strong> Alinea el eje secundario en la parte superior.</li>
+
+                        <div class="flexbox ej15">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                        </div>
+
+                        
+                        <li><strong>flex-end</strong> Alinea el eje secundario en la parte inferior.</li>
+
+                        <div class="flexbox ej16">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                        </div>
+                        
+
+                        <li><strong>center</strong> Alinea el eje secundario en la parte central.</li>
+
+                        <div class="flexbox ej17">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                        </div>
+
+
+                        <li><strong>stretch</strong> Hace que los elementos ocupen todo el alto del contenedor.</li>
+
+                        <div class="flexbox ej18">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                        </div>
+
+
+                        <li><strong>baseline</strong> Alinea el texto que tenga.</li>
+
+                        <div class="flexbox ej19">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                        </div>
+
+                    </ul>
+
+
+                    <h3>align-content:</h3>
+                    <p>Alineación vertical cuando hay varias líneas.</p>
+                    <p>Los valores de esta propiedad son: <code>flex-start</code> <code>flex-end</code> <code>center</code> <code>space-between</code> <code>space-evenly</code> <code>stretch</code></p>
+
+                    <ul>
+                        
+                        <li><strong>flex-start</strong> Alinea el principal en la parte superior izquierda.</li>
+
+                        <div class="flexbox ej20">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+                            <div>div 4</div>
+
+                        </div>
+
+                        
+                        <li><strong>flex-end</strong> Alinea el eje secundario en la parte inferior.</li>
+
+                        <div class="flexbox ej21">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+                            <div>div 4</div>
+
+                        </div>
+                        
+
+                        <li><strong>center</strong> Alinea el eje secundario en la parte central.</li>
+
+                        <div class="flexbox ej22">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+                            <div>div 4</div>
+
+                        </div>
+
+
+                        <li><strong>stretch</strong> Hace que los elementos ocupen todo el alto del contenedor.</li>
+
+                        <div class="flexbox ej23">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+                            <div>div 4</div>
+
+                        </div>
+
+
+                        <li><strong>space-between</strong> Alinea el texto que tenga.</li>
+
+                        <div class="flexbox ej24">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+                            <div>div 4</div>
+
+                        </div>
+
+
+                        <li><strong>space-around</strong> Alinea el texto que tenga.</li>
+
+                        <div class="flexbox ej25">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+                            <div>div 4</div>
+
+                        </div>
+
+                    </ul>
+
+
+                    <h3>align-self:</h3>
+                    <p>Se le añade esta propiedad al elemento flexible en cuestión.</p>
+                    <p>Los valores de esta propiedad son: <code>flex-start</code> <code>flex-end</code> <code>center</code> <code>stretch</code> <code>baseline</code></p>
+
+                    <ul>
+                        
+                        <li><strong>flex-start</strong> Alinea a ese elemento en la parte superior.</li>
+
+                        <div class="flexbox ej26">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                        </div>
+                        
+
+                        <li><strong>flex-end</strong> Alinea a ese elemento en la parte inferior.</li>
+
+                        <div class="flexbox ej27">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                        </div>
+
+
+                        <li><strong>center</strong> Alinea a ese elemento en la parte central.</li>
+
+                        <div class="flexbox ej28">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                        </div>
+
+
+                        <li><strong>stretch</strong> Alinea a ese elemento a todo el alto del contenedor.</li>
+
+                        <div class="flexbox ej29">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                        </div>
+
+
+                        <li><strong>baseline</strong> Alinea el texto de ese elemento.</li>
+
+                        <div class="flexbox ej30">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                        </div>
+
+                    </ul>
+
+
+                </section>
+
+
+                <section id="6">
+                    <h1>3.6 Propiedades de los hijos</h1>
+                    <p>A excepción de la propiedad align-self, todas las propiedades que hemos visto hasta ahora se aplican sobre el elemento contenedor. Las siguientes propiedades, sin embargo, se aplican sobre los ítems hijos.</p>
+
+                    <p>Para aplicar estas propiedades, se suele usar la pseudoclase de :nth-of-type().</p>
+
+                    <ul>
+                        
+                        <li><strong>flex-grow</strong> Número que indica el factor de crecimiento del ítem, respecto al resto.</li>
+
+                        <div class="flexbox ej31">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                        </div>
+                        
+
+                        <li><strong>flex-shrink</strong> Número que indica el factor de descrecimiento del ítem respecto al resto.</li>
+
+                        <div class="flexbox ej32">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                        </div>
+
+
+                        <li><strong>flex-basis</strong> Establece el tamaño que ocupa ese contenido.</li>
+
+                        <div class="flexbox ej33">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                        </div>
+
+
+                        <li><strong>order</strong> Permite modificar el orden normal en el que se van a mostrar los elementos flexibles. Solo puede tomar valores enteros y pueden ser tanto positivos cómo negativos.</li>
+
+                        <p>En caso de que dos elementos estén en empate, se ordenarán por el orden del código.</p>
+
+                        <div class="flexbox ej34">
+                            
+                            <div>div 1</div>
+                            <div>div 2</div>
+                            <div>div 3</div>
+
+                        </div>
+
+                    </ul>
+
+
+                </section>
+
+
+
+                
+                
+            </article>
+
+        </div>
+
+        <div class="contenidolateral">
+            
+            <h2>Contenido</h2>
+                    
+            <ol>
+                <a href="#1"><li>Introducción a FlexBox</li></a>
+                <a href="#2"><li>Conceptos FlexBox</li></a>
+                <a href="#3"><li>Activar FlexBox</li></a>
+                <a href="#4"><li>Dirección de los ejes</li></a>
+                <a href="#5"><li>Propiedades de alineación</li></a>
+                <a href="#6"><li>Propiedades de los hijos</li></a>
+            </ol>
+
+        </div>
+
+
+    </div>
+
+    
+    <footer>
+        <p>Web realizada por Marçal Alarcón Brugal - © 2021</p>
+    </footer>
+</body>
+</html>

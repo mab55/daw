@@ -1,0 +1,48 @@
+
+.azulo{
+   background-color:rgb(41, 46, 56);
+   
+}
+.azulc{
+    background-color:rgb(53, 61, 77);
+ }
+
+.iconos{
+    display: inline-block;
+    font-size: 5em;
+    margin: 0.2em;
+}
+.caja{
+    background-color:rgb(41, 46, 56);
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    
+
+}
+.carrusel{
+    height: 30em;
+    
+    
+
+}
+.redes{
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
+.caja h2{
+    
+    display: inline-block;
+}
+.caja h3{
+    
+    color: rgb(221, 28, 57);
+}
+.tituloVideo{
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    padding-bottom: 20px;
+
+}
